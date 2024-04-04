@@ -1,7 +1,11 @@
+import { timeStamp } from "console";
+import { version } from "os";
+
 const mongoose = require('mongoose');
 
-const cartSchema = mongoose.Schema({
-    user: {
+const favouriteSchema = mongoose.Schema({
+
+    user:{
         type: mongoose.Schema.Types.ObjectId,
         ref: 'users'
     },
@@ -9,14 +13,15 @@ const cartSchema = mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId,
         ref: 'products'
     },
-    quntity: {
-        type: Number,
-        default: 1
-    },
     isDelete: {
         type: Boolean,
         default: false
     }
-})
+},
+{
+versionKey: false,
+timeStamps: true
+});
 
-const cartModel = mongoose.model('carts',cartSchema);
+const favouriteModel =  mongoose.model('favourites', favouriteSchema);
+export default favouriteModel

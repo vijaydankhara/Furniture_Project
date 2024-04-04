@@ -13,10 +13,6 @@ const userSchema = mongoose.Schema({
         type: String,
         require: true
     },
-    confirmPassword: {
-        type: String,
-        require: true
-    },
     profileImage:[{
         type: String,
     }],
@@ -30,7 +26,12 @@ const userSchema = mongoose.Schema({
         default: false
     }
 
-})
+},
+
+{
+    versionKey: false,
+    timeStamps: true
+    });
 const userModel = mongoose.model('users',userSchema);
 
 export default userModel
