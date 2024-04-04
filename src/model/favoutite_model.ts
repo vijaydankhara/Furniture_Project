@@ -1,7 +1,9 @@
 import { timeStamp } from "console";
 import { version } from "os";
 
-const mongoose = require('mongoose');
+import { types } from "util";
+
+const mongoose = require("mongoose");
 
 const favouriteSchema = mongoose.Schema({
 

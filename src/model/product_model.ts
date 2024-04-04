@@ -1,4 +1,6 @@
-const mongoose = require('mongoose');
+import { types } from "util";
+
+const mongoose = require("mongoose");
 
 const productSchema = mongoose.Schema({
     title: {
