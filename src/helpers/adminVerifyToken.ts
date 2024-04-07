@@ -1,31 +1,39 @@
-import jwt from "jsonwebtoken";
-import User from "../model/user_model";
+// import jwt, { JwtPayload } from "jsonwebtoken";
+import jwt from 'jsonwebtoken';
+import User from "../../src/model/user_model";
 import { Request, Response, NextFunction } from 'express';
 
-// Import token 
-import { token } from 'morgan';
 
-declare global {
-    namespace Express {
-        interface Request {
-            admin?: any;
-        }
+
+declare namespace Express {
+    export interface Request {
+        user: any;
     }
-}
+    export interface Response {
+        user: any;
+    }
+  }
 
 // ADMIN VERIFY TOKEN
-const adminVerifyToken = async (req: Request, res: Response, next: NextFunction) => {
+export const adminVerifyToken = async (req: Request, res: Response, next: NextFunction) => {
     try {
         const authorization = req.headers['authorization'];
         if (authorization === undefined) {
             return res.json({ message: `Invalid Authorization ${console.error()}` });
         }
-        let token = authorization.split(" ")[1];
-        if (token === undefined) {
+        const  token = authorization.split(" ")[1];
+       
+        if (!token)
+        {
             return res.status(401).json({ message: `Unauthorized ${console.error()}` });
         } else {
-            let {adminId} = jwt.verify(token, 'Admin');
-            let admin = await User.findById(adminId);
+           
+            const payLoad: any = jwt.verify(token, 'Admin');
+            // console.log(payLoad.adminId);
+
+            const adminId = payLoad.adminId;
+            const admin = await User.findById(adminId);
+            // console.log(admin);
             if (admin) {
                 req.admin = admin;
                 next();

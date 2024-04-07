@@ -1,11 +1,6 @@
-import { timeStamp } from "console";
-import { version } from "os";
+import mongoose, { Schema, Document } from "mongoose";
 
-import { types } from "util";
-
-const mongoose = require("mongoose");
-
-const favouriteSchema = mongoose.Schema({
+const favouriteSchema = new mongoose.Schema({
 
     user:{
         type: mongoose.Schema.Types.ObjectId,
@@ -22,7 +17,7 @@ const favouriteSchema = mongoose.Schema({
 },
 {
 versionKey: false,
-timeStamps: true
+timestamps: true
 });
 
 const favouriteModel =  mongoose.model('favourites', favouriteSchema);

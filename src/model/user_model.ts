@@ -1,8 +1,20 @@
-import { types } from "util";
+import mongoose,{ Schema, Document} from "mongoose";
 
-const mongoose = require("mongoose");
+interface IProduct extends Document{
+    firstName: string;
+    lastName: string;
+    gender: string;
+    email: string;
+    password: string;
+    mobileNo: number,
+    profileImage: string,
+    isDelete: boolean;
+    isAdmin: boolean;
+}
 
-const userSchema = mongoose.Schema({
+
+
+const userSchema: Schema = new Schema<IProduct>({
     firstName: {
         type: String,
         require: true
@@ -39,13 +51,11 @@ const userSchema = mongoose.Schema({
         type: Boolean,
         default: false
     }
-
 },
-
 {
     versionKey: false,
-    timeStamps: true
-    });
-const userModel = mongoose.model('users',userSchema);
+    timestamps: true
+});
+const userModel = mongoose.model<IProduct>('users',userSchema);
 
 export default userModel
