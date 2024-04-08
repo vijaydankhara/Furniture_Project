@@ -1,5 +1,6 @@
 import { Request, Response } from 'express';
 import CartServices from '../../services/cart.service'; 
+import mongoose, { ObjectId } from 'mongoose';
 
 const cartServices = new CartServices();
 declare global {
@@ -50,10 +51,8 @@ export const getAllCarts = async (req: Request, res: Response) => {
 //  get Cart
 export const getCart = async (req: Request, res: Response) => {
     try {
-        let cart = await cartServices.getCartById({
-            _id: req.query.cartId,
-            isDelete: false
-        });   
+        let cartId = (req.query.cartId);
+        let cart = await cartServices.getCartById(cartId as any);   
         if(!cart){
             return res.status(404).json({ message: `No Cart Found with this ID`});
         }
