@@ -2,6 +2,7 @@
 import jwt from 'jsonwebtoken';
 import User from "../../src/model/user_model";
 import { Request, Response, NextFunction } from 'express';
+import { throws } from 'assert';
 
 
 

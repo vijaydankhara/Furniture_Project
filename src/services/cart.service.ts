@@ -1,3 +1,4 @@
+import { ObjectId } from 'mongoose';
 import Cart from '../../src/model/cart_model';
 
 export default class CartServices {
@@ -43,7 +44,7 @@ export default class CartServices {
         }
     };
 
-    async updateMany(user: string, body: any) {
+    async updateMany(user: any, body: any) {
         try {
             return await Cart.updateMany({ user: user}, { $set: body}, { new: true});
         } catch  (error: any)  {
@@ -56,7 +57,7 @@ export default class CartServices {
         try {
             let userCarts = query.me && query.me === 'true' ? [
                 {
-                    $match: { user: user._id, isDelete: false }
+                    $match: { user: user._id }
                 }
             ] : [];
             let find = [
