@@ -8,8 +8,8 @@ const cartService = new CartServices();
 declare global {
     namespace Express {
         interface Request {
-            // user?: any;
-            user?: object | undefined;
+            user?: object;
+        
         }
     }
 }
