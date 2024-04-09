@@ -3,6 +3,7 @@ import Cart from '../../src/model/cart_model';
 export default class CartServices {
     static getCart: any;
     static addToCart: any;
+    static getAllCart: any;
     // addToCart
     async addToCart(body: any) {
         try {
@@ -79,3 +80,4 @@ export default class CartServices {
         }
     };
 }
+

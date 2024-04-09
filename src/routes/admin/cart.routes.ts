@@ -1,13 +1,13 @@
-// import express, { Router } from 'express';
-
-// const cartRoutes: Router = Router();
-
-
-// import { getAllCart 
-
-// } from '../../controller/admin/cart.controller';
+import express, { Router } from 'express';
+import { adminVerifyToken } from '../../helpers/adminVerifyToken';
 
 
-// cartRoutes.get('/get-All-Carts', getAllCart);
+import {
+    getAllCart
+} from '../../controller/admin/cart.controller';
 
-// export default cartRoutes;
+const cartRoutes: Router = Router();
+
+cartRoutes.get('/get-All-Carts', adminVerifyToken, getAllCart);
+
+export default cartRoutes;
