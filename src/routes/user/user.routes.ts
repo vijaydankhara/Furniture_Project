@@ -9,7 +9,7 @@ import {
     getUser,
     updateUser,
     deleteUser,
-    // updatePassword
+    updatePassword
 } from "../../controller/user/user.controller";
 
 
@@ -34,7 +34,7 @@ userRoutes.put('/update-User',userVerifyToken, updateUser);
 userRoutes.delete('/delete-User',userVerifyToken, deleteUser);
 
 // UPDATE USER PASSWORD
-// userRoutes.put('/update-Password',userVerifyToken, updatePassword);
+userRoutes.put('/update-Password',userVerifyToken, updatePassword);
 
 
 export default userRoutes

@@ -8,8 +8,8 @@ import {
   getAllAdmin,
   getAdmin,
   updateAdmin,
-  deleteAdmin
-  // updatePassword
+  deleteAdmin,
+  updatePassword
 } from "../../controller/admin/admin.controller";
 
 const adminRoute = express.Router();
@@ -33,7 +33,7 @@ adminRoute.put('/update-Admin',adminVerifyToken, updateAdmin);
 adminRoute.delete('/delete-Admin',adminVerifyToken, deleteAdmin);
 
 // UPDATE ADMIN PASSWORD
-// adminRoute.put('/update-Password',adminVerifyToken, updatePassword);
+adminRoute.put('/update-Password',adminVerifyToken, updatePassword);
 
 
 export default adminRoute
