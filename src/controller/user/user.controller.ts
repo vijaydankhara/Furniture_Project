@@ -160,28 +160,28 @@ export const updatePassword = async (req: Request, res: Response) => {
 
       let oldPassword = req.body.oldPassword;
       if (!oldPassword) {
-          return res.json({ message: `Old Password is not Found.. Please Try Again.` });
+          return res.json({ message: `Old Password 🔑 is not Found.. Please Try Again.` });
       }
       if (!comparePassword) {
-          return res.json({ message: `Old Password is not match.. Please Try Again.` });
+          return res.json({ message: `Old Password 🔑 is not match.. Please Try Again.` });
       }
       let newPassword: any = req.body.newPassword;
       if (!newPassword) {
-          return res.json({ message: `New Password is Not Found.` });
+          return res.json({ message: `New Password 🔑 is Not Found.` });
       }
       if (newPassword === oldPassword) {
-          return res.json({ message: `Old Password and New Password Are Same Please Enter Diffrent Password.` });
+          return res.json({ message: `Old 🔑 Password and New Password Are Same Please Enter Diffrent Password.` });
       }
       let confirmPassword = req.body.confirmPassword;
       if (!confirmPassword) {
-          return res.json({ message: `Confirm Password is Not Found.` });
+          return res.json({ message: `Confirm Password 🔑 is Not Found.` });
       }
       if (newPassword !== confirmPassword) {
-          return res.json({ message: `New Password and Confirm  Password are not same.` });
+          return res.json({ message: `New Password 🔑 and Confirm  Password are not same.` });
       }
       let hashPassword = await bcrypt.hash(newPassword, 10);
       user = await userService.updateUser(user._id, { password: hashPassword });
-      res.status(200).json({ message: 'Password changed successfully.....' });
+      res.status(200).json({ message: 'Password 🔑 changed successfully🔑🔑🔑🔑' });
   } catch (error) {
       console.log(error);
       res.status(500).json({ message: `Internal Server Error..${console.error()}` });
