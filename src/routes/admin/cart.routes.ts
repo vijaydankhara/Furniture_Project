@@ -10,4 +10,5 @@ const cartRoutes: Router = Router();
 
 cartRoutes.get('/get-All-Carts', adminVerifyToken, getAllCart);
 
+
 export default cartRoutes;
