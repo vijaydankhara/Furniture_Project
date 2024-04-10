@@ -21,3 +21,14 @@ export const addReview = async (req: Request,res: Response) => {
         res.status(500).json({ Message: 'Internal server Error' });
     }
 };
+
+// GET ALL REVIEW
+export const getAllReview = async(req: Request,res: Response) => {
+    try {
+        let review = await reviewService.getAllReview(req.query);
+        res.status(200).json(review);
+    } catch (error) {
+        console.log(error);
+        res.status(500).json({ Message: 'Internal server Error' });
+    }
+};
