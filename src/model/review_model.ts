@@ -1,5 +1,4 @@
 import { types } from "util";
-
 const mongoose = require("mongoose");
 
 const reviewSchema = mongoose.Schema({
@@ -33,3 +32,4 @@ const reviewSchema = mongoose.Schema({
 const reviewModel = mongoose.model('reviews',reviewSchema);
 
 export default reviewModel;
+
