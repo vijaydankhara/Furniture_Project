@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node src/app.ts",
-    "dev": "nodemon src/app.ts"
+    "start": "ts-node src/app.ts",
+    "dev": "ts-node src/app.ts"
   },
   "keywords": [],
   "author": "",
@@ -22,7 +22,6 @@
     "morgan": "^1.10.0",
     "multer": "^1.4.5-lts.1",
     "node": "^18.20.0",
-    "ts-node": "^10.9.2",
     "typescript": "^5.4.3"
   },
   "devDependencies": {
@@ -32,6 +31,7 @@
     "@types/jsonwebtoken": "^9.0.6",
     "@types/mongoose": "^5.11.97",
     "@types/multer": "^1.4.11",
-    "nodemon": "^3.1.0"
+    "nodemon": "^3.1.0",
+    "ts-node": "^10.9.2"
   }
 }
