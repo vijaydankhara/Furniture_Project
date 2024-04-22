@@ -1,24 +1,40 @@
 import { Request, Response } from "express";
 import ProductService from "../../services/product.service";
 
+
 const productService = new ProductService();
 
 declare global {
     namespace Express {
         interface Request {
             product?: any;
+            files?: any;
         }
     }
 }
 
+
 // ADD NEW PRODUCT
 export const addNewProduct = async (req: Request, res: Response) => {
     try {
-        let product : object | null = await productService.getProduct({ title: req.body.title, isDelete: false });
+        let product  = await productService.getProduct({ title: req.body.title, isDelete: false });
+        console.log("product is:",product);
+        
         if (product) {
             return res.status(400).json({ message: 'Product already exists' });
         }
-        product = await productService.addNewProduct({ ...req.body });
+        console.log("length",req.files.length);
+        
+        req.body.price = Number(req.body.price);
+        if (!req.files || req.files.length === 0) {
+            return res.status(400).json({ message: 'No 📁📁📁 files uploaded !!! ' });
+        }
+        const imagePath: string[] = [];
+        req.files.forEach((file: any) => {
+            const path = file.path;
+            imagePath.push(path);
+        });
+        product = await productService.addNewProduct({ ...req.body, productImage: imagePath });
         res.status(201).json({ product, message: 'Product Added' });
     } catch (error) {
         console.log(error);

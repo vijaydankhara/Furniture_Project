@@ -1,15 +1,18 @@
 import productModel from "../model/product_model";
- 
+import { Request, Response } from 'express'; 
 export default class productService{
-    // add Product 
-    addNewProduct = async (body:any) => {
+
+    // add new product
+    addNewProduct = async (body: any) => {
         return await productModel.create(body);
     }
-    // get  Spesific Product 
-    getProduct = async (body:any) => {
+    
+    // get product
+    getProduct = async (body: object) => {
         return await productModel.findOne(body);
     }
-
+    
+    
     // Get All PRODUCT
     getAllProduct = async (body:any) =>{
         return await productModel.find(body);
@@ -18,6 +21,7 @@ export default class productService{
     getProductById = async (body:any) => {
     return await productModel.findById(body);
 }
+
     // Update Product
     updateProduct = async (id:string , body:any) => {
         return await productModel.findByIdAndUpdate(id, {$set: body}, {new: true});
@@ -27,5 +31,6 @@ export default class productService{
     deleteProduct = async (id:string) => {
         return await productModel.findByIdAndDelete(id);
     }
-
+    
 }
+

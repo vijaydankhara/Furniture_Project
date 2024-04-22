@@ -6,6 +6,7 @@ interface IProduct extends Document {
     description: string;
     price: number;
     category: string[];
+    productImage: string[];
     isDelete: boolean;
      
 }
@@ -21,6 +22,9 @@ const productSchema: Schema = new Schema<IProduct>({
     price: {
         type: Number,
     },
+    productImage: [{
+        type: String,
+    }],
     category: [{
         type: String,
     }],
