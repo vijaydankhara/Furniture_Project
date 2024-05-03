@@ -1,0 +1,4692 @@
+{
+	"info": {
+		"_postman_id": "e465198d-1d09-460b-9b6d-5f41637d975b",
+		"name": "Furnituretypscript",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33278690",
+		"_collection_link": "https://martian-meadow-815845.postman.co/workspace/New-Team-Workspace~e543023f-3806-4bd7-b206-6ad8f175cf30/collection/33278690-e465198d-1d09-460b-9b6d-5f41637d975b?action=share&source=collection_link&creator=33278690"
+	},
+	"item": [
+		{
+			"name": "userAdmin",
+			"item": [
+				{
+					"name": "register_admin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\":\"divya\",\r\n    \"lastName\": \"patel\",\r\n    \"gender\":\"Female\",\r\n    \"email\":\"divya143@gmail.com\",\r\n    \"password\":\"1143\",\r\n    \"mobileNo\":9737343193\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}admin/user-admin/register-Admin",
+							"host": [
+								"{{baseURL}}admin"
+							],
+							"path": [
+								"user-admin",
+								"register-Admin"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "register_admin",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"firstName\":\"divya\",\r\n    \"lastName\": \"patel\",\r\n    \"gender\":\"Female\",\r\n    \"email\":\"divya143@gmail.com\",\r\n    \"password\":\"1143\",\r\n    \"mobileNo\":9737343193\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseURL}}admin/user-admin/register-Admin",
+									"host": [
+										"{{baseURL}}admin"
+									],
+									"path": [
+										"user-admin",
+										"register-Admin"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "382"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"17e-KnzwOlTmk+I769yljOIn7ADKvyE\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 07 Apr 2024 04:41:06 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"admin\": {\n        \"firstName\": \"divya\",\n        \"lastName\": \"patel\",\n        \"gender\": \"Female\",\n        \"email\": \"divya143@gmail.com\",\n        \"password\": \"$2b$10$onzX08R3LkV17FmxzXRgNOtsBzKWEYcxJ5cItWwwL64sicTyQ7Ayu\",\n        \"mobileNo\": 9737343193,\n        \"isAdmin\": true,\n        \"isDelete\": false,\n        \"_id\": \"661223e2c7f64e612d548010\",\n        \"createdAt\": \"2024-04-07T04:41:06.644Z\",\n        \"updatedAt\": \"2024-04-07T04:41:06.644Z\"\n    },\n    \"message\": \"New Admin Is Added SuccesFully...\"\n}"
+						}
+					]
+				},
+				{
+					"name": "loginAdmin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"email\":\"vijay143@gmail.com\",\r\n\"password\":\"1143\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}admin/user-admin/login-Admin",
+							"host": [
+								"{{baseURL}}admin"
+							],
+							"path": [
+								"user-admin",
+								"login-Admin"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "loginAdmin-VIJAY",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n \"email\":\"vijay3193@gmail.com\",\r\n\"password\":\"1143\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseURL}}admin/user-admin/login-Admin",
+									"host": [
+										"{{baseURL}}admin"
+									],
+									"path": [
+										"user-admin",
+										"login-Admin"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "200"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"c8-DzNILXrjkhEmGIXFP+xUGkrYFs0\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 07 Apr 2024 04:44:12 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbklkIjoiNjYxMjIzOTVjN2Y2NGU2MTJkNTQ4MDBkIiwiaWF0IjoxNzEyNDY1MDUyfQ._kahawjhO2I5IGr3mjgNOyC5QIyJEvpg_0qJGxG1AGs\",\n    \"message\": \"Login SuccesFully...\"\n}"
+						},
+						{
+							"name": "loginAdmin_SMRUTI",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n \"email\":\"smruti18@gmail.com\",\r\n\"password\":\"1143\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseURL}}admin/user-admin/login-Admin",
+									"host": [
+										"{{baseURL}}admin"
+									],
+									"path": [
+										"user-admin",
+										"login-Admin"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "200"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"c8-upMrYS8mdetj2wvmXJw3W3ZN2+E\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 08 Apr 2024 13:15:46 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbklkIjoiNjYxMjJhMGZjN2Y2NGU2MTJkNTQ4MDRmIiwiaWF0IjoxNzEyNTgyMTQ2fQ.sE-RCyMvoTJ0phM7cVFiIyUCD70BPtK4z83yrXXFWYo\",\n    \"message\": \"Login SuccesFully...\"\n}"
+						}
+					]
+				},
+				{
+					"name": "getAllAdmin",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{adminVijayToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}admin/user-admin/get-All-Admin",
+							"host": [
+								"{{baseURL}}admin"
+							],
+							"path": [
+								"user-admin",
+								"get-All-Admin"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "getAllAdmin",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseURL}}admin/user-admin/get-All-Admin",
+									"host": [
+										"{{baseURL}}admin"
+									],
+									"path": [
+										"user-admin",
+										"get-All-Admin"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "989"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3dd-2CuSDcbNMG46m+h1s1v7zzGYtds\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 07 Apr 2024 04:46:33 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"66122395c7f64e612d54800d\",\n        \"firstName\": \"Vijay\",\n        \"lastName\": \"Dankhara\",\n        \"gender\": \"Male\",\n        \"email\": \"vijay3193@gmail.com\",\n        \"password\": \"$2b$10$7I71VDWX3Y6t85BtNXMkNOxOVlmfjAKbWvJyepb8ya/bJmIvHb0rC\",\n        \"mobileNo\": 9737383193,\n        \"isAdmin\": true,\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T04:39:49.037Z\",\n        \"updatedAt\": \"2024-04-07T04:39:49.037Z\"\n    },\n    {\n        \"_id\": \"661223e2c7f64e612d548010\",\n        \"firstName\": \"divya\",\n        \"lastName\": \"patel\",\n        \"gender\": \"Female\",\n        \"email\": \"divya143@gmail.com\",\n        \"password\": \"$2b$10$onzX08R3LkV17FmxzXRgNOtsBzKWEYcxJ5cItWwwL64sicTyQ7Ayu\",\n        \"mobileNo\": 9737343193,\n        \"isAdmin\": true,\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T04:41:06.644Z\",\n        \"updatedAt\": \"2024-04-07T04:41:06.644Z\"\n    },\n    {\n        \"_id\": \"6612250bc7f64e612d548015\",\n        \"firstName\": \"Divyesh\",\n        \"lastName\": \"Dankhara\",\n        \"gender\": \"Male\",\n        \"email\": \"divyesh143@gmail.com\",\n        \"password\": \"$2b$10$hD.peB2c4.nbvFNbNeViyedORuQtFaGuEHWzq5XgW.LrPDeF0.EQe\",\n        \"mobileNo\": 9737343199,\n        \"isAdmin\": true,\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T04:46:03.847Z\",\n        \"updatedAt\": \"2024-04-07T04:46:03.847Z\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "getAdmin",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{adminVijayToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}admin/user-admin/get-Admin?adminId=661223e2c7f64e612d548010",
+							"host": [
+								"{{baseURL}}admin"
+							],
+							"path": [
+								"user-admin",
+								"get-Admin"
+							],
+							"query": [
+								{
+									"key": "adminId",
+									"value": "661223e2c7f64e612d548010"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "getAdmin",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseURL}}admin/user-admin/get-Admin?adminId=661223e2c7f64e612d548010",
+									"host": [
+										"{{baseURL}}admin"
+									],
+									"path": [
+										"user-admin",
+										"get-Admin"
+									],
+									"query": [
+										{
+											"key": "adminId",
+											"value": "661223e2c7f64e612d548010"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "326"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"146-//vKQdPkTWrtB695vmpM2Xrvg3o\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 07 Apr 2024 04:47:35 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"661223e2c7f64e612d548010\",\n    \"firstName\": \"divya\",\n    \"lastName\": \"patel\",\n    \"gender\": \"Female\",\n    \"email\": \"divya143@gmail.com\",\n    \"password\": \"$2b$10$onzX08R3LkV17FmxzXRgNOtsBzKWEYcxJ5cItWwwL64sicTyQ7Ayu\",\n    \"mobileNo\": 9737343193,\n    \"isAdmin\": true,\n    \"isDelete\": false,\n    \"createdAt\": \"2024-04-07T04:41:06.644Z\",\n    \"updatedAt\": \"2024-04-07T04:41:06.644Z\"\n}"
+						}
+					]
+				},
+				{
+					"name": "updateAdmin",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{adminVijayToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"firstName\": \"Divya\",\r\n    \"lastName\": \"Gajera\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}admin/user-admin/update-Admin?adminId=661223e2c7f64e612d548010",
+							"host": [
+								"{{baseURL}}admin"
+							],
+							"path": [
+								"user-admin",
+								"update-Admin"
+							],
+							"query": [
+								{
+									"key": "adminId",
+									"value": "661223e2c7f64e612d548010"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "updateAdmin",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"firstName\": \"Divya\",\r\n    \"lastName\": \"Gajera\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseURL}}admin/user-admin/update-Admin?adminId=661223e2c7f64e612d548010",
+									"host": [
+										"{{baseURL}}admin"
+									],
+									"path": [
+										"user-admin",
+										"update-Admin"
+									],
+									"query": [
+										{
+											"key": "adminId",
+											"value": "661223e2c7f64e612d548010"
+										}
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "379"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"17b-UHhQ75EctW+CBBZtGiJi2MZLqes\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 07 Apr 2024 04:49:14 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"admin\": {\n        \"_id\": \"661223e2c7f64e612d548010\",\n        \"firstName\": \"Divya\",\n        \"lastName\": \"Gajera\",\n        \"gender\": \"Female\",\n        \"email\": \"divya143@gmail.com\",\n        \"password\": \"$2b$10$onzX08R3LkV17FmxzXRgNOtsBzKWEYcxJ5cItWwwL64sicTyQ7Ayu\",\n        \"mobileNo\": 9737343193,\n        \"isAdmin\": true,\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T04:41:06.644Z\",\n        \"updatedAt\": \"2024-04-07T04:49:14.634Z\"\n    },\n    \"message\": \"Admin Updated Successfully...\"\n}"
+						}
+					]
+				},
+				{
+					"name": "deleteAdmin",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{adminVijayToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}admin/user-admin/delete-Admin?adminId=6612250bc7f64e612d548015",
+							"host": [
+								"{{baseURL}}admin"
+							],
+							"path": [
+								"user-admin",
+								"delete-Admin"
+							],
+							"query": [
+								{
+									"key": "adminId",
+									"value": "6612250bc7f64e612d548015"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "deleteAdmin",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseURL}}admin/user-admin/delete-Admin?adminId=6612250bc7f64e612d548015",
+									"host": [
+										"{{baseURL}}admin"
+									],
+									"path": [
+										"user-admin",
+										"delete-Admin"
+									],
+									"query": [
+										{
+											"key": "adminId",
+											"value": "6612250bc7f64e612d548015"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "381"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"17d-L8vBSDhmEPRZNC/LZc7kaxFZnZM\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 07 Apr 2024 04:49:36 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"admin\": {\n        \"_id\": \"6612250bc7f64e612d548015\",\n        \"firstName\": \"Divyesh\",\n        \"lastName\": \"Dankhara\",\n        \"gender\": \"Male\",\n        \"email\": \"divyesh143@gmail.com\",\n        \"password\": \"$2b$10$hD.peB2c4.nbvFNbNeViyedORuQtFaGuEHWzq5XgW.LrPDeF0.EQe\",\n        \"mobileNo\": 9737343199,\n        \"isAdmin\": true,\n        \"isDelete\": true,\n        \"createdAt\": \"2024-04-07T04:46:03.847Z\",\n        \"updatedAt\": \"2024-04-07T04:49:36.723Z\"\n    },\n    \"message\": \"Admin Deleted Succesfully...\"\n}"
+						}
+					]
+				},
+				{
+					"name": "updatePassword",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{adminVijayToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"oldPassword\":\"1143\",\r\n    \"newPassword\":\"11431143\",\r\n    \"confirmPassword\":\"11431143\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}admin/user-admin/update-Password?adminId=66122395c7f64e612d54800d",
+							"host": [
+								"{{baseURL}}admin"
+							],
+							"path": [
+								"user-admin",
+								"update-Password"
+							],
+							"query": [
+								{
+									"key": "adminId",
+									"value": "66122395c7f64e612d54800d"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "updatePassword-VIJAY",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"oldPassword\":\"1143\",\r\n    \"newPassword\":\"11431143\",\r\n    \"confirmPassword\":\"11431143\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseURL}}admin/user-admin/update-Password?adminId=66122395c7f64e612d54800d",
+									"host": [
+										"{{baseURL}}admin"
+									],
+									"path": [
+										"user-admin",
+										"update-Password"
+									],
+									"query": [
+										{
+											"key": "adminId",
+											"value": "66122395c7f64e612d54800d"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "48"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"30-VlcHqSzgHuQjf9o0jNfeLP+xuG0\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 10 Apr 2024 15:16:29 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Password changed successfully.....\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "coustomer_user",
+			"item": [
+				{
+					"name": "Register-User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\":\"dixita\",\r\n    \"lastName\": \"mangukiya\",\r\n    \"gender\":\"Female\",\r\n    \"email\":\"dixita4@gmail.com\",\r\n    \"password\":\"1143\",\r\n    \"mobileNo\":8866111213\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}user/user-admin/register-User",
+							"host": [
+								"{{baseURL}}user"
+							],
+							"path": [
+								"user-admin",
+								"register-User"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"firstName\":\"smruti\",\r\n    \"lastName\": \"mandhana\",\r\n    \"gender\":\"Female\",\r\n    \"email\":\"smruti18@gmail.com\",\r\n    \"password\":\"1143\",\r\n    \"mobileNo\":8866181818\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseURL}}user/users/register-User",
+									"host": [
+										"{{baseURL}}user"
+									],
+									"path": [
+										"users",
+										"register-User"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "385"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"181-Ih9Mon99MEWvsC/jsxcMEa+IIhs\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 07 Apr 2024 05:07:27 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"user\": {\n        \"firstName\": \"smruti\",\n        \"lastName\": \"mandhana\",\n        \"gender\": \"Female\",\n        \"email\": \"smruti18@gmail.com\",\n        \"password\": \"$2b$10$DqSlSyth70mig8L08QMAyeYcuvMfX4dOQc5rBvPrP7nzJHw0g7PB6\",\n        \"mobileNo\": 8866181818,\n        \"isAdmin\": false,\n        \"isDelete\": false,\n        \"_id\": \"66122a0fc7f64e612d54804f\",\n        \"createdAt\": \"2024-04-07T05:07:27.059Z\",\n        \"updatedAt\": \"2024-04-07T05:07:27.059Z\"\n    },\n    \"message\": \"New User Is Added SuccesFully...\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Login-Admin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"email\":\"axita99@gmail.com\",\r\n\"password\":\"1143\"\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}user/users/login-User",
+							"host": [
+								"{{baseURL}}user"
+							],
+							"path": [
+								"users",
+								"login-User"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Login-Admin_mohit",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n \"email\":\"mohit33@gmail.com\",\r\n\"password\":\"1143\"\r\n    \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseURL}}user/users/login-User",
+									"host": [
+										"{{baseURL}}user"
+									],
+									"path": [
+										"users",
+										"login-User"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "198"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"c6-I0xXkRHQhcBh8rSWo9cWWkgg9j4\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 07 Apr 2024 05:11:48 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjEyMjdmZWM3ZjY0ZTYxMmQ1NDgwMmIiLCJpYXQiOjE3MTI0NjY3MDh9.rh80DP4L8xpUTH6iD7iW_ESSrN-Yo5sdUOTYjpDheaY\",\n    \"message\": \"Login SuccesFully...\"\n}"
+						},
+						{
+							"name": "Login-Admin-SHITAL",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n \"email\":\"shital26@gmail.com\",\r\n\"password\":\"1143\"\r\n    \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseURL}}user/users/login-User",
+									"host": [
+										"{{baseURL}}user"
+									],
+									"path": [
+										"users",
+										"login-User"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "198"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"c6-x5q0Q976yVzNPPrXSeWD7XiVnhU\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 07 Apr 2024 17:23:27 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjEyMjhiMmM3ZjY0ZTYxMmQ1NDgwM2EiLCJpYXQiOjE3MTI1MTA2MDd9.0Ff8svQpz41E9Nqz8v7nJ3JfOOcSWvh1M6evk5WjpbA\",\n    \"message\": \"Login SuccesFully...\"\n}"
+						}
+					]
+				},
+				{
+					"name": "get-All-UserAdmin",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{userAxitaToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}user/users/get-All-user",
+							"host": [
+								"{{baseURL}}user"
+							],
+							"path": [
+								"users",
+								"get-All-user"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get-All-UserAdmin",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseURL}}user/users/get-All-user",
+									"host": [
+										"{{baseURL}}user"
+									],
+									"path": [
+										"users",
+										"get-All-user"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "4916"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1334-rmmA8xwOnA7AOoQjfN/0Vpj7PWU\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 07 Apr 2024 05:16:45 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"6612276cc7f64e612d548025\",\n        \"firstName\": \"axita\",\n        \"lastName\": \"patel\",\n        \"gender\": \"Female\",\n        \"email\": \"axita99@gmail.com\",\n        \"password\": \"$2b$10$DMEMaBxwido3ezRCeBz3Fu5PTupiT050Bx3.MbOt/XGR.W.Bq/cHG\",\n        \"mobileNo\": 8866111111,\n        \"isAdmin\": false,\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T04:56:12.117Z\",\n        \"updatedAt\": \"2024-04-07T04:56:12.117Z\"\n    },\n    {\n        \"_id\": \"6612279ac7f64e612d548028\",\n        \"firstName\": \"nikhita\",\n        \"lastName\": \"patel\",\n        \"gender\": \"Female\",\n        \"email\": \"nikhita3@gmail.com\",\n        \"password\": \"$2b$10$SWd7xGHXXKxut7npCJxRKel.M0CgYynt9kOd7K/d/InA5cbUMRG9W\",\n        \"mobileNo\": 8866111112,\n        \"isAdmin\": false,\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T04:56:58.846Z\",\n        \"updatedAt\": \"2024-04-07T04:56:58.846Z\"\n    },\n    {\n        \"_id\": \"661227fec7f64e612d54802b\",\n        \"firstName\": \"mohit\",\n        \"lastName\": \"sharma\",\n        \"gender\": \"Male\",\n        \"email\": \"mohit33@gmail.com\",\n        \"password\": \"$2b$10$LdQooIi2C7s/YsnlEJ.EzexAQaSfEzOLCPItrSugOjzFGER2dFQ2O\",\n        \"mobileNo\": 8866111113,\n        \"isAdmin\": false,\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T04:58:38.846Z\",\n        \"updatedAt\": \"2024-04-07T04:58:38.846Z\"\n    },\n    {\n        \"_id\": \"66122819c7f64e612d54802e\",\n        \"firstName\": \"axar\",\n        \"lastName\": \"patel\",\n        \"gender\": \"Male\",\n        \"email\": \"axar23@gmail.com\",\n        \"password\": \"$2b$10$GhPub5taGFC3sEq12TPb.exCnX90lrS7sdbcCUN/moqEbyDCc0PVe\",\n        \"mobileNo\": 8866111114,\n        \"isAdmin\": false,\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T04:59:05.954Z\",\n        \"updatedAt\": \"2024-04-07T04:59:05.954Z\"\n    },\n    {\n        \"_id\": \"6612283fc7f64e612d548031\",\n        \"firstName\": \"rohit\",\n        \"lastName\": \"sharma\",\n        \"gender\": \"Male\",\n        \"email\": \"rohit45@gmail.com\",\n        \"password\": \"$2b$10$.K6Se12KC.IQk.Ko6npu5.CVnc1N.2kzy0qk349yHP/nopDqDyTeu\",\n        \"mobileNo\": 8866111117,\n        \"isAdmin\": false,\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T04:59:43.384Z\",\n        \"updatedAt\": \"2024-04-07T04:59:43.384Z\"\n    },\n    {\n        \"_id\": \"66122856c7f64e612d548034\",\n        \"firstName\": \"virat\",\n        \"lastName\": \"kohli\",\n        \"gender\": \"Male\",\n        \"email\": \"virat18@gmail.com\",\n        \"password\": \"$2b$10$crMJLN/hsu.eir3bqcqVLO7SV.tBHfvGVgrLwyJmcw7Ie/fIIip/G\",\n        \"mobileNo\": 8866111118,\n        \"isAdmin\": false,\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T05:00:06.710Z\",\n        \"updatedAt\": \"2024-04-07T05:00:06.710Z\"\n    },\n    {\n        \"_id\": \"66122888c7f64e612d548037\",\n        \"firstName\": \"shrushti\",\n        \"lastName\": \"patel\",\n        \"gender\": \"Female\",\n        \"email\": \"shrushti2@gmail.com\",\n        \"password\": \"$2b$10$0kthafITvoOWdn97ZcdkUOAGTgJteJY9/KDV.BIj0sKzds0Hj/HSG\",\n        \"mobileNo\": 8866111115,\n        \"isAdmin\": false,\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T05:00:56.412Z\",\n        \"updatedAt\": \"2024-04-07T05:00:56.412Z\"\n    },\n    {\n        \"_id\": \"661228b2c7f64e612d54803a\",\n        \"firstName\": \"shital\",\n        \"lastName\": \"joshi\",\n        \"gender\": \"Female\",\n        \"email\": \"shital26@gmail.com\",\n        \"password\": \"$2b$10$5YinJDvyls7j836.aLvMlOvVOzw662uSNlhz.jsu7XdzaA/v0Ac..\",\n        \"mobileNo\": 8866111116,\n        \"isAdmin\": false,\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T05:01:38.252Z\",\n        \"updatedAt\": \"2024-04-07T05:01:38.252Z\"\n    },\n    {\n        \"_id\": \"661228e6c7f64e612d54803d\",\n        \"firstName\": \"shefali\",\n        \"lastName\": \"verma\",\n        \"gender\": \"Female\",\n        \"email\": \"shefali45@gmail.com\",\n        \"password\": \"$2b$10$hfSz68ECL08N7ti5NiQ6jOnQmrJImlZF3Wff9uQTMjnII0zZAZKRe\",\n        \"mobileNo\": 8866111119,\n        \"isAdmin\": false,\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T05:02:30.564Z\",\n        \"updatedAt\": \"2024-04-07T05:02:30.564Z\"\n    },\n    {\n        \"_id\": \"66122906c7f64e612d548040\",\n        \"firstName\": \"deepti\",\n        \"lastName\": \"sharma\",\n        \"gender\": \"Female\",\n        \"email\": \"deepti75@gmail.com\",\n        \"password\": \"$2b$10$prBBZOyTAVf2lAXa2PpcPev2NFvwJlxZig3j7f04ldO8N34jWjMjS\",\n        \"mobileNo\": 8866111120,\n        \"isAdmin\": false,\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T05:03:02.001Z\",\n        \"updatedAt\": \"2024-04-07T05:03:02.001Z\"\n    },\n    {\n        \"_id\": \"66122938c7f64e612d548043\",\n        \"firstName\": \"parthiv\",\n        \"lastName\": \"patel\",\n        \"gender\": \"Male\",\n        \"email\": \"parthiv93@gmail.com\",\n        \"password\": \"$2b$10$QKPVERSHW2YchJFmEKxyx.niEBU.lz8iqAIL8VLpckCDyR5LYDkq2\",\n        \"mobileNo\": 8866111121,\n        \"isAdmin\": false,\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T05:03:52.120Z\",\n        \"updatedAt\": \"2024-04-07T05:03:52.120Z\"\n    },\n    {\n        \"_id\": \"66122965c7f64e612d548046\",\n        \"firstName\": \"MS\",\n        \"lastName\": \"Dhoni\",\n        \"gender\": \"Male\",\n        \"email\": \"msdhoni7@gmail.com\",\n        \"password\": \"$2b$10$tOdb/Aht8G1q.D3V.ZjDAOtDUlAcMCUgBEoVJnZCa2jIXYOVi.sYC\",\n        \"mobileNo\": 8866777777,\n        \"isAdmin\": false,\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T05:04:37.435Z\",\n        \"updatedAt\": \"2024-04-07T05:04:37.435Z\"\n    },\n    {\n        \"_id\": \"661229a0c7f64e612d548049\",\n        \"firstName\": \"ketan\",\n        \"lastName\": \"ghori\",\n        \"gender\": \"Male\",\n        \"email\": \"kg36@gmail.com\",\n        \"password\": \"$2b$10$hliwTQgeQ1VDc1WXXkfVT.pCyCpdCNFcrhOZKzHGAn2Ehru8L.ckC\",\n        \"mobileNo\": 8866111133,\n        \"isAdmin\": false,\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T05:05:36.219Z\",\n        \"updatedAt\": \"2024-04-07T05:05:36.219Z\"\n    },\n    {\n        \"_id\": \"661229dbc7f64e612d54804c\",\n        \"firstName\": \"Alpesh\",\n        \"lastName\": \"Kathiriya\",\n        \"gender\": \"Male\",\n        \"email\": \"alpesh6@gmail.com\",\n        \"password\": \"$2b$10$Hcp4UpeJg4xMsNWd0Qu9MeNaEYyXxENd0S8zXC7O5BZbCfNQcITke\",\n        \"mobileNo\": 8866113333,\n        \"isAdmin\": false,\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T05:06:35.714Z\",\n        \"updatedAt\": \"2024-04-07T05:06:35.714Z\"\n    },\n    {\n        \"_id\": \"66122a0fc7f64e612d54804f\",\n        \"firstName\": \"smruti\",\n        \"lastName\": \"mandhana\",\n        \"gender\": \"Female\",\n        \"email\": \"smruti18@gmail.com\",\n        \"password\": \"$2b$10$DqSlSyth70mig8L08QMAyeYcuvMfX4dOQc5rBvPrP7nzJHw0g7PB6\",\n        \"mobileNo\": 8866181818,\n        \"isAdmin\": false,\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T05:07:27.059Z\",\n        \"updatedAt\": \"2024-04-07T05:07:27.059Z\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "get-Admin",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{userAxitaToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}user/users/get-User?userId=6612279ac7f64e612d548028",
+							"host": [
+								"{{baseURL}}user"
+							],
+							"path": [
+								"users",
+								"get-User"
+							],
+							"query": [
+								{
+									"key": "userId",
+									"value": "6612279ac7f64e612d548028"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get-Admin_Nikhita",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseURL}}user/users/get-User?userId=6612279ac7f64e612d548028",
+									"host": [
+										"{{baseURL}}user"
+									],
+									"path": [
+										"users",
+										"get-User"
+									],
+									"query": [
+										{
+											"key": "userId",
+											"value": "6612279ac7f64e612d548028"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "329"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"149-1N9UAH6HrXrawTjrLndncpH/c5I\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 07 Apr 2024 05:17:44 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"6612279ac7f64e612d548028\",\n    \"firstName\": \"nikhita\",\n    \"lastName\": \"patel\",\n    \"gender\": \"Female\",\n    \"email\": \"nikhita3@gmail.com\",\n    \"password\": \"$2b$10$SWd7xGHXXKxut7npCJxRKel.M0CgYynt9kOd7K/d/InA5cbUMRG9W\",\n    \"mobileNo\": 8866111112,\n    \"isAdmin\": false,\n    \"isDelete\": false,\n    \"createdAt\": \"2024-04-07T04:56:58.846Z\",\n    \"updatedAt\": \"2024-04-07T04:56:58.846Z\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Update-Admin",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{userAxitaToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"firstName\": \"Shital\",\r\n    \"lastName\": \"Joshi\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}user/users/update-User?userId=661228b2c7f64e612d54803a",
+							"host": [
+								"{{baseURL}}user"
+							],
+							"path": [
+								"users",
+								"update-User"
+							],
+							"query": [
+								{
+									"key": "userId",
+									"value": "661228b2c7f64e612d54803a"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update-Admin",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"firstName\": \"Shital\",\r\n    \"lastName\": \"Joshi\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseURL}}user/users/update-User?userId=661228b2c7f64e612d54803a",
+									"host": [
+										"{{baseURL}}user"
+									],
+									"path": [
+										"users",
+										"update-User"
+									],
+									"query": [
+										{
+											"key": "userId",
+											"value": "661228b2c7f64e612d54803a"
+										}
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "378"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"17a-aDQ36EddI/jFnB+0Sd2bfCqx+jk\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 07 Apr 2024 05:20:12 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"user\": {\n        \"_id\": \"661228b2c7f64e612d54803a\",\n        \"firstName\": \"Shital\",\n        \"lastName\": \"Joshi\",\n        \"gender\": \"Female\",\n        \"email\": \"shital26@gmail.com\",\n        \"password\": \"$2b$10$5YinJDvyls7j836.aLvMlOvVOzw662uSNlhz.jsu7XdzaA/v0Ac..\",\n        \"mobileNo\": 8866111116,\n        \"isAdmin\": false,\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T05:01:38.252Z\",\n        \"updatedAt\": \"2024-04-07T05:20:11.905Z\"\n    },\n    \"message\": \"User Updated Successfully...\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete-Admin",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{userAxitaToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}user/users/delete-User?userId=661229a0c7f64e612d548049",
+							"host": [
+								"{{baseURL}}user"
+							],
+							"path": [
+								"users",
+								"delete-User"
+							],
+							"query": [
+								{
+									"key": "userId",
+									"value": "661229a0c7f64e612d548049"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete-Admin",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseURL}}user/users/delete-User?userId=661229a0c7f64e612d548049",
+									"host": [
+										"{{baseURL}}user"
+									],
+									"path": [
+										"users",
+										"delete-User"
+									],
+									"query": [
+										{
+											"key": "userId",
+											"value": "661229a0c7f64e612d548049"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "369"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"171-iqKnkQEjYgSGL6JCAMUFFZ17Fc8\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 07 Apr 2024 05:21:19 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"user\": {\n        \"_id\": \"661229a0c7f64e612d548049\",\n        \"firstName\": \"ketan\",\n        \"lastName\": \"ghori\",\n        \"gender\": \"Male\",\n        \"email\": \"kg36@gmail.com\",\n        \"password\": \"$2b$10$hliwTQgeQ1VDc1WXXkfVT.pCyCpdCNFcrhOZKzHGAn2Ehru8L.ckC\",\n        \"mobileNo\": 8866111133,\n        \"isAdmin\": false,\n        \"isDelete\": true,\n        \"createdAt\": \"2024-04-07T05:05:36.219Z\",\n        \"updatedAt\": \"2024-04-07T05:21:19.146Z\"\n    },\n    \"message\": \"user Deleted Succesfully...\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Update-Password",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{userAxitaToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"oldPassword\":\"1143\",\r\n    \"newPassword\":\"11431143\",\r\n    \"confirmPassword\":\"11431143\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}user/users/update-Password?userId=6612276cc7f64e612d548025",
+							"host": [
+								"{{baseURL}}user"
+							],
+							"path": [
+								"users",
+								"update-Password"
+							],
+							"query": [
+								{
+									"key": "userId",
+									"value": "6612276cc7f64e612d548025"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update-Password-AXITA",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"oldPassword\":\"1143\",\r\n    \"newPassword\":\"11431143\",\r\n    \"confirmPassword\":\"11431143\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseURL}}user/users/update-Password?userId=6612276cc7f64e612d548025",
+									"host": [
+										"{{baseURL}}user"
+									],
+									"path": [
+										"users",
+										"update-Password"
+									],
+									"query": [
+										{
+											"key": "userId",
+											"value": "6612276cc7f64e612d548025"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "48"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"30-VlcHqSzgHuQjf9o0jNfeLP+xuG0\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 10 Apr 2024 15:39:08 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Password changed successfully.....\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "product",
+			"item": [
+				{
+					"name": "admin",
+					"item": [
+						{
+							"name": "add-product",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"title\":\"TV Entertainment Unit \",\r\n\"description\":\"White color\",\r\n\"price\":1999,\r\n\"category\":[\"wooden\",\"Pine Wood\",\"Particle Board\"]\r\n}"
+								},
+								"url": {
+									"raw": "{{baseURL}}admin/product/add-product",
+									"host": [
+										"{{baseURL}}admin"
+									],
+									"path": [
+										"product",
+										"add-product"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "add-product",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n\"title\":\"BabyTeddy Study Table Chair Set\",\r\n\"description\":\"Set Adjustable Height Posture Improvement with Desk lamp Metal Study Table\",\r\n\"price\":5555,\r\n\"category\":[\"Fiber\",\"Plastic\"]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseURL}}admin/product/add-product",
+											"host": [
+												"{{baseURL}}admin"
+											],
+											"path": [
+												"product",
+												"add-product"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "344"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"158-JirVkSfvFg7YcdhiDzmQFAADMxg\""
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 07 Apr 2024 08:46:42 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"product\": {\n        \"title\": \"BabyTeddy Study Table Chair Set\",\n        \"description\": \"Set Adjustable Height Posture Improvement with Desk lamp Metal Study Table\",\n        \"price\": 5555,\n        \"category\": [\n            \"Fiber\",\n            \"Plastic\"\n        ],\n        \"isDelete\": false,\n        \"_id\": \"66125d72c33eab4ec1012110\",\n        \"createdAt\": \"2024-04-07T08:46:42.829Z\",\n        \"updatedAt\": \"2024-04-07T08:46:42.829Z\"\n    },\n    \"message\": \"Product Added\"\n}"
+								}
+							]
+						},
+						{
+							"name": "add-product photo",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{adminVijayToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "BED",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "bet product for home",
+											"type": "text"
+										},
+										{
+											"key": "price",
+											"value": "45999",
+											"type": "text"
+										},
+										{
+											"key": "category",
+											"value": "Pine Wood",
+											"type": "text"
+										},
+										{
+											"key": "productImage",
+											"type": "file",
+											"src": [
+												"/C:/Users/Dell/Desktop/b1.jpg",
+												"/C:/Users/Dell/Desktop/b2.jpg",
+												"/C:/Users/Dell/Desktop/b3.jpeg"
+											]
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseURL}}admin/product/add-product",
+									"host": [
+										"{{baseURL}}admin"
+									],
+									"path": [
+										"product",
+										"add-product"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "add-product photo",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "title",
+													"value": "bed",
+													"type": "text"
+												},
+												{
+													"key": "description",
+													"value": "bet product for home",
+													"type": "text"
+												},
+												{
+													"key": "price",
+													"value": "45999",
+													"type": "text"
+												},
+												{
+													"key": "category",
+													"value": "Pine Wood",
+													"type": "text"
+												},
+												{
+													"key": "productImage",
+													"type": "file",
+													"src": [
+														"/C:/Users/Dell/Desktop/b1.jpg",
+														"/C:/Users/Dell/Desktop/b2.jpg",
+														"/C:/Users/Dell/Desktop/b3.jpeg"
+													]
+												}
+											]
+										},
+										"url": {
+											"raw": "{{baseURL}}admin/product/add-product",
+											"host": [
+												"{{baseURL}}admin"
+											],
+											"path": [
+												"product",
+												"add-product"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "488"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"1e8-bYQ3voY08ZtxAw7DWamCnaQicKA\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 17 Apr 2024 17:41:11 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"product\": {\n        \"title\": \"bed\",\n        \"description\": \"bet product for home\",\n        \"price\": 45999,\n        \"productImage\": [\n            \"D:\\\\Furniture_Project_Typ\\\\src\\\\public\\\\images\\\\1713375671582_b1.jpg\",\n            \"D:\\\\Furniture_Project_Typ\\\\src\\\\public\\\\images\\\\1713375671592_b2.jpg\",\n            \"D:\\\\Furniture_Project_Typ\\\\src\\\\public\\\\images\\\\1713375671600_b3.jpeg\"\n        ],\n        \"category\": [\n            \"Pine Wood\"\n        ],\n        \"isDelete\": false,\n        \"_id\": \"662009b7fd515f09a0e78c7b\",\n        \"createdAt\": \"2024-04-17T17:41:11.738Z\",\n        \"updatedAt\": \"2024-04-17T17:41:11.738Z\"\n    },\n    \"message\": \"Product Added\"\n}"
+								}
+							]
+						},
+						{
+							"name": "getAllProduct",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseURL}}admin/product/get-products",
+									"host": [
+										"{{baseURL}}admin"
+									],
+									"path": [
+										"product",
+										"get-products"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "getAllProduct",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseURL}}admin/product/get-products",
+											"host": [
+												"{{baseURL}}admin"
+											],
+											"path": [
+												"product",
+												"get-products"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "2472"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"9a8-YTOWti4/KR2lEJvIYRMLrf5EZ7k\""
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 07 Apr 2024 08:47:54 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"_id\": \"661257830847e2219e3a6de8\",\n        \"title\": \"TV Entertainment Unit \",\n        \"description\": \"White color\",\n        \"price\": 1999,\n        \"category\": [\n            \"wooden\",\n            \"Pine Wood\",\n            \"Particle Board\"\n        ],\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T08:21:23.121Z\",\n        \"updatedAt\": \"2024-04-07T08:21:23.121Z\"\n    },\n    {\n        \"_id\": \"66125866f3034a53bb487894\",\n        \"category\": [],\n        \"productImage\": [],\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T08:25:10.952Z\",\n        \"updatedAt\": \"2024-04-07T08:25:10.952Z\"\n    },\n    {\n        \"_id\": \"661258f5c33eab4ec10120fb\",\n        \"title\": \"Bed \",\n        \"description\": \"Black\",\n        \"price\": 21999,\n        \"category\": [\n            \"wooden\",\n            \"Pine Wood\",\n            \"Particle Board\"\n        ],\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T08:27:33.999Z\",\n        \"updatedAt\": \"2024-04-07T08:27:33.999Z\"\n    },\n    {\n        \"_id\": \"661259d9c33eab4ec10120fe\",\n        \"title\": \"Wood Queen Bed  \",\n        \"description\": \"Matrix-Urban Teak & White\",\n        \"price\": 32999,\n        \"category\": [\n            \"wooden\",\n            \"Pine Wood\"\n        ],\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T08:31:21.293Z\",\n        \"updatedAt\": \"2024-04-07T08:31:21.293Z\"\n    },\n    {\n        \"_id\": \"66125a7ac33eab4ec1012101\",\n        \"title\": \"Office Arm Chair\",\n        \"description\": \"Study & Home Office\",\n        \"price\": 9999,\n        \"category\": [\n            \"Iron\"\n        ],\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T08:34:02.777Z\",\n        \"updatedAt\": \"2024-04-07T08:34:02.777Z\"\n    },\n    {\n        \"_id\": \"66125b48c33eab4ec1012104\",\n        \"title\": \"Tulip311 Fabric 3 + 1 + 1 Sofa Set\",\n        \"description\": \"Brown, DIY(Do-It-Yourself)\",\n        \"price\": 19999,\n        \"category\": [\n            \"Solid Wood\",\n            \"Fabric\"\n        ],\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T08:37:28.959Z\",\n        \"updatedAt\": \"2024-04-07T08:37:28.959Z\"\n    },\n    {\n        \"_id\": \"66125c0cc33eab4ec1012107\",\n        \"title\": \"Dining Table\",\n        \"description\": \"Angel Furniture Foldable Solid Wood 6 Seater\",\n        \"price\": 12999,\n        \"category\": [\n            \"Pine Wood\"\n        ],\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T08:40:44.721Z\",\n        \"updatedAt\": \"2024-04-07T08:40:44.721Z\"\n    },\n    {\n        \"_id\": \"66125ca5c33eab4ec101210a\",\n        \"title\": \"Coffee Table\",\n        \"description\": \"Finish Color - Rustic Brown, DIY(Do-It-Yourself)\",\n        \"price\": 18999,\n        \"category\": [\n            \"Pine Wood\",\n            \"Particle Board\"\n        ],\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T08:43:17.873Z\",\n        \"updatedAt\": \"2024-04-07T08:43:17.873Z\"\n    },\n    {\n        \"_id\": \"66125cf4c33eab4ec101210d\",\n        \"title\": \"Laptop Table\",\n        \"description\": \" Solid Wood Study Table\",\n        \"price\": 5999,\n        \"category\": [\n            \"Pine Wood\",\n            \"Particle Board\"\n        ],\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T08:44:36.808Z\",\n        \"updatedAt\": \"2024-04-07T08:44:36.808Z\"\n    },\n    {\n        \"_id\": \"66125d72c33eab4ec1012110\",\n        \"title\": \"BabyTeddy Study Table Chair Set\",\n        \"description\": \"Set Adjustable Height Posture Improvement with Desk lamp Metal Study Table\",\n        \"price\": 5555,\n        \"category\": [\n            \"Fiber\",\n            \"Plastic\"\n        ],\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T08:46:42.829Z\",\n        \"updatedAt\": \"2024-04-07T08:46:42.829Z\"\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "GET ALL PRODUCT ONLINE",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseONLINEURL}}/api/admin/product/get-products",
+									"host": [
+										"{{baseONLINEURL}}"
+									],
+									"path": [
+										"api",
+										"admin",
+										"product",
+										"get-products"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "getAllProduct",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseURL}}admin/product/get-products",
+											"host": [
+												"{{baseURL}}admin"
+											],
+											"path": [
+												"product",
+												"get-products"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "2472"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"9a8-YTOWti4/KR2lEJvIYRMLrf5EZ7k\""
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 07 Apr 2024 08:47:54 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"_id\": \"661257830847e2219e3a6de8\",\n        \"title\": \"TV Entertainment Unit \",\n        \"description\": \"White color\",\n        \"price\": 1999,\n        \"category\": [\n            \"wooden\",\n            \"Pine Wood\",\n            \"Particle Board\"\n        ],\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T08:21:23.121Z\",\n        \"updatedAt\": \"2024-04-07T08:21:23.121Z\"\n    },\n    {\n        \"_id\": \"66125866f3034a53bb487894\",\n        \"category\": [],\n        \"productImage\": [],\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T08:25:10.952Z\",\n        \"updatedAt\": \"2024-04-07T08:25:10.952Z\"\n    },\n    {\n        \"_id\": \"661258f5c33eab4ec10120fb\",\n        \"title\": \"Bed \",\n        \"description\": \"Black\",\n        \"price\": 21999,\n        \"category\": [\n            \"wooden\",\n            \"Pine Wood\",\n            \"Particle Board\"\n        ],\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T08:27:33.999Z\",\n        \"updatedAt\": \"2024-04-07T08:27:33.999Z\"\n    },\n    {\n        \"_id\": \"661259d9c33eab4ec10120fe\",\n        \"title\": \"Wood Queen Bed  \",\n        \"description\": \"Matrix-Urban Teak & White\",\n        \"price\": 32999,\n        \"category\": [\n            \"wooden\",\n            \"Pine Wood\"\n        ],\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T08:31:21.293Z\",\n        \"updatedAt\": \"2024-04-07T08:31:21.293Z\"\n    },\n    {\n        \"_id\": \"66125a7ac33eab4ec1012101\",\n        \"title\": \"Office Arm Chair\",\n        \"description\": \"Study & Home Office\",\n        \"price\": 9999,\n        \"category\": [\n            \"Iron\"\n        ],\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T08:34:02.777Z\",\n        \"updatedAt\": \"2024-04-07T08:34:02.777Z\"\n    },\n    {\n        \"_id\": \"66125b48c33eab4ec1012104\",\n        \"title\": \"Tulip311 Fabric 3 + 1 + 1 Sofa Set\",\n        \"description\": \"Brown, DIY(Do-It-Yourself)\",\n        \"price\": 19999,\n        \"category\": [\n            \"Solid Wood\",\n            \"Fabric\"\n        ],\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T08:37:28.959Z\",\n        \"updatedAt\": \"2024-04-07T08:37:28.959Z\"\n    },\n    {\n        \"_id\": \"66125c0cc33eab4ec1012107\",\n        \"title\": \"Dining Table\",\n        \"description\": \"Angel Furniture Foldable Solid Wood 6 Seater\",\n        \"price\": 12999,\n        \"category\": [\n            \"Pine Wood\"\n        ],\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T08:40:44.721Z\",\n        \"updatedAt\": \"2024-04-07T08:40:44.721Z\"\n    },\n    {\n        \"_id\": \"66125ca5c33eab4ec101210a\",\n        \"title\": \"Coffee Table\",\n        \"description\": \"Finish Color - Rustic Brown, DIY(Do-It-Yourself)\",\n        \"price\": 18999,\n        \"category\": [\n            \"Pine Wood\",\n            \"Particle Board\"\n        ],\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T08:43:17.873Z\",\n        \"updatedAt\": \"2024-04-07T08:43:17.873Z\"\n    },\n    {\n        \"_id\": \"66125cf4c33eab4ec101210d\",\n        \"title\": \"Laptop Table\",\n        \"description\": \" Solid Wood Study Table\",\n        \"price\": 5999,\n        \"category\": [\n            \"Pine Wood\",\n            \"Particle Board\"\n        ],\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T08:44:36.808Z\",\n        \"updatedAt\": \"2024-04-07T08:44:36.808Z\"\n    },\n    {\n        \"_id\": \"66125d72c33eab4ec1012110\",\n        \"title\": \"BabyTeddy Study Table Chair Set\",\n        \"description\": \"Set Adjustable Height Posture Improvement with Desk lamp Metal Study Table\",\n        \"price\": 5555,\n        \"category\": [\n            \"Fiber\",\n            \"Plastic\"\n        ],\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T08:46:42.829Z\",\n        \"updatedAt\": \"2024-04-07T08:46:42.829Z\"\n    }\n]"
+								},
+								{
+									"name": "GET ALL PRODUCT ONLINE",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseONLINEURL}}/api/admin/product/get-products",
+											"host": [
+												"{{baseONLINEURL}}"
+											],
+											"path": [
+												"api",
+												"admin",
+												"product",
+												"get-products"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Thu, 11 Apr 2024 01:00:53 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "CF-Ray",
+											"value": "87270ad248d09632-DEL"
+										},
+										{
+											"key": "CF-Cache-Status",
+											"value": "DYNAMIC"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"905-crgKK6cgKocNHPADusXCu/T/nkY\""
+										},
+										{
+											"key": "Vary",
+											"value": "Accept-Encoding"
+										},
+										{
+											"key": "rndr-id",
+											"value": "0fe47501-76cd-49bd"
+										},
+										{
+											"key": "x-powered-by",
+											"value": "Express"
+										},
+										{
+											"key": "x-render-origin-server",
+											"value": "Render"
+										},
+										{
+											"key": "Server",
+											"value": "cloudflare"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "br"
+										},
+										{
+											"key": "alt-svc",
+											"value": "h3=\":443\"; ma=86400"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"_id\": \"661257830847e2219e3a6de8\",\n        \"title\": \"TV Entertainment Unit \",\n        \"description\": \"White color\",\n        \"price\": 1999,\n        \"category\": [\n            \"wooden\",\n            \"Pine Wood\",\n            \"Particle Board\"\n        ],\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T08:21:23.121Z\",\n        \"updatedAt\": \"2024-04-07T08:21:23.121Z\"\n    },\n    {\n        \"_id\": \"661258f5c33eab4ec10120fb\",\n        \"title\": \"Bed \",\n        \"description\": \"Black\",\n        \"price\": 21999,\n        \"category\": [\n            \"wooden\",\n            \"Pine Wood\",\n            \"Particle Board\"\n        ],\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T08:27:33.999Z\",\n        \"updatedAt\": \"2024-04-07T08:27:33.999Z\"\n    },\n    {\n        \"_id\": \"661259d9c33eab4ec10120fe\",\n        \"title\": \"Wood Queen Bed  \",\n        \"description\": \"Matrix-Urban Teak & White\",\n        \"price\": 32999,\n        \"category\": [\n            \"wooden\",\n            \"Pine Wood\"\n        ],\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T08:31:21.293Z\",\n        \"updatedAt\": \"2024-04-07T08:31:21.293Z\"\n    },\n    {\n        \"_id\": \"66125a7ac33eab4ec1012101\",\n        \"title\": \"Office Arm Chair\",\n        \"description\": \"Study & Home Office\",\n        \"price\": 7999,\n        \"category\": [\n            \"Iron\"\n        ],\n        \"isDelete\": true,\n        \"createdAt\": \"2024-04-07T08:34:02.777Z\",\n        \"updatedAt\": \"2024-04-07T09:36:57.075Z\"\n    },\n    {\n        \"_id\": \"66125b48c33eab4ec1012104\",\n        \"title\": \"Tulip311 Fabric 3 + 1 + 1 Sofa Set\",\n        \"description\": \"Brown, DIY(Do-It-Yourself)\",\n        \"price\": 19999,\n        \"category\": [\n            \"Solid Wood\",\n            \"Fabric\"\n        ],\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T08:37:28.959Z\",\n        \"updatedAt\": \"2024-04-07T08:37:28.959Z\"\n    },\n    {\n        \"_id\": \"66125c0cc33eab4ec1012107\",\n        \"title\": \"Dining Table\",\n        \"description\": \"Angel Furniture Foldable Solid Wood 6 Seater\",\n        \"price\": 12999,\n        \"category\": [\n            \"Pine Wood\"\n        ],\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T08:40:44.721Z\",\n        \"updatedAt\": \"2024-04-07T08:40:44.721Z\"\n    },\n    {\n        \"_id\": \"66125ca5c33eab4ec101210a\",\n        \"title\": \"Coffee Table\",\n        \"description\": \"Finish Color - Rustic Brown, DIY(Do-It-Yourself)\",\n        \"price\": 18999,\n        \"category\": [\n            \"Pine Wood\",\n            \"Particle Board\"\n        ],\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T08:43:17.873Z\",\n        \"updatedAt\": \"2024-04-07T08:43:17.873Z\"\n    },\n    {\n        \"_id\": \"66125cf4c33eab4ec101210d\",\n        \"title\": \"Laptop Table\",\n        \"description\": \" Solid Wood Study Table\",\n        \"price\": 9999,\n        \"category\": [\n            \"Pine Wood\",\n            \"Particle Board\"\n        ],\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T08:44:36.808Z\",\n        \"updatedAt\": \"2024-04-07T09:39:32.572Z\"\n    },\n    {\n        \"_id\": \"66125d72c33eab4ec1012110\",\n        \"title\": \"BabyTeddy Study Table Chair Set\",\n        \"description\": \"Set Adjustable Height Posture Improvement with Desk lamp Metal Study Table\",\n        \"price\": 5555,\n        \"category\": [\n            \"Fiber\",\n            \"Plastic\"\n        ],\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T08:46:42.829Z\",\n        \"updatedAt\": \"2024-04-07T08:46:42.829Z\"\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "getProduct",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseURL}}admin/product/get-product?productId=661259d9c33eab4ec10120fe",
+									"host": [
+										"{{baseURL}}admin"
+									],
+									"path": [
+										"product",
+										"get-product"
+									],
+									"query": [
+										{
+											"key": "productId",
+											"value": "661259d9c33eab4ec10120fe"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "getProduct",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseURL}}admin/product/get-product?productId=66125c0cc33eab4ec1012107",
+											"host": [
+												"{{baseURL}}admin"
+											],
+											"path": [
+												"product",
+												"get-product"
+											],
+											"query": [
+												{
+													"key": "productId",
+													"value": "66125c0cc33eab4ec1012107"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "252"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"fc-IAFAo2kUiLgIC+tuav/TgO3aZhc\""
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 07 Apr 2024 09:28:39 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"_id\": \"66125c0cc33eab4ec1012107\",\n    \"title\": \"Dining Table\",\n    \"description\": \"Angel Furniture Foldable Solid Wood 6 Seater\",\n    \"price\": 12999,\n    \"category\": [\n        \"Pine Wood\"\n    ],\n    \"isDelete\": false,\n    \"createdAt\": \"2024-04-07T08:40:44.721Z\",\n    \"updatedAt\": \"2024-04-07T08:40:44.721Z\"\n}"
+								}
+							]
+						},
+						{
+							"name": "updateProduct",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"price\": 7999\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseURL}}admin/product/update-product?productId=66125cf4c33eab4ec101210d",
+									"host": [
+										"{{baseURL}}admin"
+									],
+									"path": [
+										"product",
+										"update-product"
+									],
+									"query": [
+										{
+											"key": "productId",
+											"value": "66125cf4c33eab4ec101210d"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "updateProduct",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"price\": 9999\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseURL}}admin/product/update-product?productId=66125cf4c33eab4ec101210d",
+											"host": [
+												"{{baseURL}}admin"
+											],
+											"path": [
+												"product",
+												"update-product"
+											],
+											"query": [
+												{
+													"key": "productId",
+													"value": "66125cf4c33eab4ec101210d"
+												}
+											]
+										}
+									},
+									"status": "Accepted",
+									"code": 202,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "290"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"122-6+3KZHb5Vea2Mt5olJBPUnFnzFc\""
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 07 Apr 2024 09:39:32 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"product\": {\n        \"_id\": \"66125cf4c33eab4ec101210d\",\n        \"title\": \"Laptop Table\",\n        \"description\": \" Solid Wood Study Table\",\n        \"price\": 9999,\n        \"category\": [\n            \"Pine Wood\",\n            \"Particle Board\"\n        ],\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T08:44:36.808Z\",\n        \"updatedAt\": \"2024-04-07T09:39:32.572Z\"\n    },\n    \"message\": \"Product is updated\"\n}"
+								}
+							]
+						},
+						{
+							"name": "deleteProduct",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseURL}}admin/product/delete-product?productId=66125a7ac33eab4ec1012101",
+									"host": [
+										"{{baseURL}}admin"
+									],
+									"path": [
+										"product",
+										"delete-product"
+									],
+									"query": [
+										{
+											"key": "productId",
+											"value": "66125a7ac33eab4ec1012101"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "deleteProduct",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseURL}}admin/product/delete-product?productId=66125a7ac33eab4ec1012101",
+											"host": [
+												"{{baseURL}}admin"
+											],
+											"path": [
+												"product",
+												"delete-product"
+											],
+											"query": [
+												{
+													"key": "productId",
+													"value": "66125a7ac33eab4ec1012101"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "267"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"10b-zRpjy8mYYvrGppXQOHyAher/RSg\""
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 07 Apr 2024 09:36:57 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"product\": {\n        \"_id\": \"66125a7ac33eab4ec1012101\",\n        \"title\": \"Office Arm Chair\",\n        \"description\": \"Study & Home Office\",\n        \"price\": 7999,\n        \"category\": [\n            \"Iron\"\n        ],\n        \"isDelete\": true,\n        \"createdAt\": \"2024-04-07T08:34:02.777Z\",\n        \"updatedAt\": \"2024-04-07T09:36:57.075Z\"\n    },\n    \"message\": \"Product is Deleted\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "user",
+					"item": [
+						{
+							"name": "get-All-Product",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{userToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseURL}}user/product/get-products",
+									"host": [
+										"{{baseURL}}user"
+									],
+									"path": [
+										"product",
+										"get-products"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get-All-Product",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseURL}}user/product/get-products",
+											"host": [
+												"{{baseURL}}user"
+											],
+											"path": [
+												"product",
+												"get-products"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "2309"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"905-crgKK6cgKocNHPADusXCu/T/nkY\""
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 07 Apr 2024 09:52:20 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"_id\": \"661257830847e2219e3a6de8\",\n        \"title\": \"TV Entertainment Unit \",\n        \"description\": \"White color\",\n        \"price\": 1999,\n        \"category\": [\n            \"wooden\",\n            \"Pine Wood\",\n            \"Particle Board\"\n        ],\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T08:21:23.121Z\",\n        \"updatedAt\": \"2024-04-07T08:21:23.121Z\"\n    },\n    {\n        \"_id\": \"661258f5c33eab4ec10120fb\",\n        \"title\": \"Bed \",\n        \"description\": \"Black\",\n        \"price\": 21999,\n        \"category\": [\n            \"wooden\",\n            \"Pine Wood\",\n            \"Particle Board\"\n        ],\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T08:27:33.999Z\",\n        \"updatedAt\": \"2024-04-07T08:27:33.999Z\"\n    },\n    {\n        \"_id\": \"661259d9c33eab4ec10120fe\",\n        \"title\": \"Wood Queen Bed  \",\n        \"description\": \"Matrix-Urban Teak & White\",\n        \"price\": 32999,\n        \"category\": [\n            \"wooden\",\n            \"Pine Wood\"\n        ],\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T08:31:21.293Z\",\n        \"updatedAt\": \"2024-04-07T08:31:21.293Z\"\n    },\n    {\n        \"_id\": \"66125a7ac33eab4ec1012101\",\n        \"title\": \"Office Arm Chair\",\n        \"description\": \"Study & Home Office\",\n        \"price\": 7999,\n        \"category\": [\n            \"Iron\"\n        ],\n        \"isDelete\": true,\n        \"createdAt\": \"2024-04-07T08:34:02.777Z\",\n        \"updatedAt\": \"2024-04-07T09:36:57.075Z\"\n    },\n    {\n        \"_id\": \"66125b48c33eab4ec1012104\",\n        \"title\": \"Tulip311 Fabric 3 + 1 + 1 Sofa Set\",\n        \"description\": \"Brown, DIY(Do-It-Yourself)\",\n        \"price\": 19999,\n        \"category\": [\n            \"Solid Wood\",\n            \"Fabric\"\n        ],\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T08:37:28.959Z\",\n        \"updatedAt\": \"2024-04-07T08:37:28.959Z\"\n    },\n    {\n        \"_id\": \"66125c0cc33eab4ec1012107\",\n        \"title\": \"Dining Table\",\n        \"description\": \"Angel Furniture Foldable Solid Wood 6 Seater\",\n        \"price\": 12999,\n        \"category\": [\n            \"Pine Wood\"\n        ],\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T08:40:44.721Z\",\n        \"updatedAt\": \"2024-04-07T08:40:44.721Z\"\n    },\n    {\n        \"_id\": \"66125ca5c33eab4ec101210a\",\n        \"title\": \"Coffee Table\",\n        \"description\": \"Finish Color - Rustic Brown, DIY(Do-It-Yourself)\",\n        \"price\": 18999,\n        \"category\": [\n            \"Pine Wood\",\n            \"Particle Board\"\n        ],\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T08:43:17.873Z\",\n        \"updatedAt\": \"2024-04-07T08:43:17.873Z\"\n    },\n    {\n        \"_id\": \"66125cf4c33eab4ec101210d\",\n        \"title\": \"Laptop Table\",\n        \"description\": \" Solid Wood Study Table\",\n        \"price\": 9999,\n        \"category\": [\n            \"Pine Wood\",\n            \"Particle Board\"\n        ],\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T08:44:36.808Z\",\n        \"updatedAt\": \"2024-04-07T09:39:32.572Z\"\n    },\n    {\n        \"_id\": \"66125d72c33eab4ec1012110\",\n        \"title\": \"BabyTeddy Study Table Chair Set\",\n        \"description\": \"Set Adjustable Height Posture Improvement with Desk lamp Metal Study Table\",\n        \"price\": 5555,\n        \"category\": [\n            \"Fiber\",\n            \"Plastic\"\n        ],\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T08:46:42.829Z\",\n        \"updatedAt\": \"2024-04-07T08:46:42.829Z\"\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "get-Product",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{userToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseURL}}user/product/get-product?productId=661259d9c33eab4ec10120fe",
+									"host": [
+										"{{baseURL}}user"
+									],
+									"path": [
+										"product",
+										"get-product"
+									],
+									"query": [
+										{
+											"key": "productId",
+											"value": "661259d9c33eab4ec10120fe"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "favorite",
+			"item": [
+				{
+					"name": "user",
+					"item": [
+						{
+							"name": "add-To-Favorite",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{userShitalToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n     \"cartItem\": \"66125cf4c33eab4ec101210d\",\r\n    \"_id\": \"661228b2c7f64e612d54803a\"  \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseURL}}user/favorite/add-To-Favorite",
+									"host": [
+										"{{baseURL}}user"
+									],
+									"path": [
+										"favorite",
+										"add-To-Favorite"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "New Request",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n     \"cartItem\": \"66125ca5c33eab4ec101210a\",\r\n    \"_id\": \"6612276cc7f64e612d548025\"  \r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseURL}}user/favorite/add-To-Favorite",
+											"host": [
+												"{{baseURL}}user"
+											],
+											"path": [
+												"favorite",
+												"add-To-Favorite"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "275"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"113-i6Oa5B8rwiqn1K6SCMNkf4Jz+qk\""
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 07 Apr 2024 17:08:38 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"favorite\": {\n        \"user\": \"6612276cc7f64e612d548025\",\n        \"cartItem\": \"66125ca5c33eab4ec101210a\",\n        \"isDelete\": false,\n        \"_id\": \"6612276cc7f64e612d548025\",\n        \"createdAt\": \"2024-04-07T17:08:37.558Z\",\n        \"updatedAt\": \"2024-04-07T17:08:37.558Z\"\n    },\n    \"message\": \"Product added to your favorite list successfully\"\n}"
+								},
+								{
+									"name": "New Request",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n     \"cartItem\": \"661259d9c33eab4ec10120fe\",\r\n    \"_id\": \"661227fec7f64e612d54802b\"  \r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseURL}}user/favorite/add-To-Favorite",
+											"host": [
+												"{{baseURL}}user"
+											],
+											"path": [
+												"favorite",
+												"add-To-Favorite"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "275"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"113-rLI6kmFwCXziAJOi/Niiciwhfm4\""
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 07 Apr 2024 17:13:38 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"favorite\": {\n        \"user\": \"661227fec7f64e612d54802b\",\n        \"cartItem\": \"661259d9c33eab4ec10120fe\",\n        \"isDelete\": false,\n        \"_id\": \"661227fec7f64e612d54802b\",\n        \"createdAt\": \"2024-04-07T17:13:37.826Z\",\n        \"updatedAt\": \"2024-04-07T17:13:37.826Z\"\n    },\n    \"message\": \"Product added to your favorite list successfully\"\n}"
+								},
+								{
+									"name": "New Request",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n     \"cartItem\": \"66125d72c33eab4ec1012110\",\r\n    \"_id\": \"66122856c7f64e612d548034\"  \r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseURL}}user/favorite/add-To-Favorite",
+											"host": [
+												"{{baseURL}}user"
+											],
+											"path": [
+												"favorite",
+												"add-To-Favorite"
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "52"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"34-B2kuxBPjB3UuIdhWwBTS/+1tE8g\""
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 07 Apr 2024 17:14:47 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"Product already in your favorite list.\"\n}"
+								},
+								{
+									"name": "add-To-Favorite",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n     \"cartItem\": \"66125cf4c33eab4ec101210d\",\r\n    \"_id\": \"661228b2c7f64e612d54803a\"  \r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseURL}}user/favorite/add-To-Favorite",
+											"host": [
+												"{{baseURL}}user"
+											],
+											"path": [
+												"favorite",
+												"add-To-Favorite"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "275"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"113-dp8OUwffh6KOpE/H68Z9zaKnDWE\""
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 07 Apr 2024 17:25:17 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"favorite\": {\n        \"user\": \"661228b2c7f64e612d54803a\",\n        \"cartItem\": \"66125cf4c33eab4ec101210d\",\n        \"isDelete\": false,\n        \"_id\": \"661228b2c7f64e612d54803a\",\n        \"createdAt\": \"2024-04-07T17:25:16.679Z\",\n        \"updatedAt\": \"2024-04-07T17:25:16.679Z\"\n    },\n    \"message\": \"Product added to your favorite list successfully\"\n}"
+								}
+							]
+						},
+						{
+							"name": "get-All-Favorites",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{userShitalToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseURL}}user/favorite/get-All-Favorites",
+									"host": [
+										"{{baseURL}}user"
+									],
+									"path": [
+										"favorite",
+										"get-All-Favorites"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get-All-Favorites",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseURL}}user/favorite/get-All-Favorites",
+											"host": [
+												"{{baseURL}}user"
+											],
+											"path": [
+												"favorite",
+												"get-All-Favorites"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "607"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"25f-IY23NGQ17Dvh00sTglRi8fpVcnQ\""
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 07 Apr 2024 17:27:14 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"_id\": \"6612276cc7f64e612d548025\",\n        \"user\": \"6612276cc7f64e612d548025\",\n        \"cartItem\": \"66125ca5c33eab4ec101210a\",\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T17:08:37.558Z\",\n        \"updatedAt\": \"2024-04-07T17:08:37.558Z\"\n    },\n    {\n        \"_id\": \"661227fec7f64e612d54802b\",\n        \"user\": \"661227fec7f64e612d54802b\",\n        \"cartItem\": \"661259d9c33eab4ec10120fe\",\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T17:13:37.826Z\",\n        \"updatedAt\": \"2024-04-07T17:13:37.826Z\"\n    },\n    {\n        \"_id\": \"661228b2c7f64e612d54803a\",\n        \"user\": \"661228b2c7f64e612d54803a\",\n        \"cartItem\": \"66125cf4c33eab4ec101210d\",\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T17:25:16.679Z\",\n        \"updatedAt\": \"2024-04-07T17:25:16.679Z\"\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "delete-Favorite",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{userShitalToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseURL}}user/favorite/delete-Favorite?_id=661228b2c7f64e612d54803a",
+									"host": [
+										"{{baseURL}}user"
+									],
+									"path": [
+										"favorite",
+										"delete-Favorite"
+									],
+									"query": [
+										{
+											"key": "_id",
+											"value": "661228b2c7f64e612d54803a"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "delete-Favorite",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseURL}}user/favorite/delete-Favorite?_id=661228b2c7f64e612d54803a",
+											"host": [
+												"{{baseURL}}user"
+											],
+											"path": [
+												"favorite",
+												"delete-Favorite"
+											],
+											"query": [
+												{
+													"key": "_id",
+													"value": "661228b2c7f64e612d54803a"
+												}
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "265"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"109-pXLuGxHabFd8AZvJ/zE20YYaWUQ\""
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 07 Apr 2024 17:30:11 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"favorite\": {\n        \"_id\": \"6612276cc7f64e612d548025\",\n        \"user\": \"6612276cc7f64e612d548025\",\n        \"cartItem\": \"66125ca5c33eab4ec101210a\",\n        \"isDelete\": true,\n        \"createdAt\": \"2024-04-07T17:08:37.558Z\",\n        \"updatedAt\": \"2024-04-07T17:30:11.521Z\"\n    },\n    \"message\": \"Favorite Item is Deleted Successfully..\"\n}"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "cart",
+			"item": [
+				{
+					"name": "admin",
+					"item": [
+						{
+							"name": "get-All-Carts",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{adminVijayToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseURL}}admin/cart/get-All-Carts",
+									"host": [
+										"{{baseURL}}admin"
+									],
+									"path": [
+										"cart",
+										"get-All-Carts"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get-All-Carts",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseURL}}admin/cart/get-All-Carts",
+											"host": [
+												"{{baseURL}}admin"
+											],
+											"path": [
+												"cart",
+												"get-All-Carts"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "2764"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"acc-dQJlVsXIS9m+1hTp5Oqs+GoZ6JA\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 08 Apr 2024 13:18:11 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"_id\": \"6612276cc7f64e612d548025\",\n        \"user\": \"6612276cc7f64e612d548025\",\n        \"cartItem\": {\n            \"_id\": \"661259d9c33eab4ec10120fe\",\n            \"title\": \"Wood Queen Bed  \",\n            \"description\": \"Matrix-Urban Teak & White\",\n            \"price\": 32999,\n            \"category\": [\n                \"wooden\",\n                \"Pine Wood\"\n            ],\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-07T08:31:21.293Z\",\n            \"updatedAt\": \"2024-04-07T08:31:21.293Z\"\n        },\n        \"quantity\": 2,\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T23:50:50.723Z\",\n        \"updatedAt\": \"2024-04-07T23:50:50.723Z\"\n    },\n    {\n        \"_id\": \"6612279ac7f64e612d548028\",\n        \"user\": \"6612276cc7f64e612d548025\",\n        \"cartItem\": {\n            \"_id\": \"66125d72c33eab4ec1012110\",\n            \"title\": \"BabyTeddy Study Table Chair Set\",\n            \"description\": \"Set Adjustable Height Posture Improvement with Desk lamp Metal Study Table\",\n            \"price\": 5555,\n            \"category\": [\n                \"Fiber\",\n                \"Plastic\"\n            ],\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-07T08:46:42.829Z\",\n            \"updatedAt\": \"2024-04-07T08:46:42.829Z\"\n        },\n        \"quantity\": 4,\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T23:53:45.175Z\",\n        \"updatedAt\": \"2024-04-07T23:53:45.175Z\"\n    },\n    {\n        \"_id\": \"661227fec7f64e612d54802b\",\n        \"user\": \"661227fec7f64e612d54802b\",\n        \"cartItem\": {\n            \"_id\": \"66125d72c33eab4ec1012110\",\n            \"title\": \"BabyTeddy Study Table Chair Set\",\n            \"description\": \"Set Adjustable Height Posture Improvement with Desk lamp Metal Study Table\",\n            \"price\": 5555,\n            \"category\": [\n                \"Fiber\",\n                \"Plastic\"\n            ],\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-07T08:46:42.829Z\",\n            \"updatedAt\": \"2024-04-07T08:46:42.829Z\"\n        },\n        \"quantity\": 5,\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T23:55:32.378Z\",\n        \"updatedAt\": \"2024-04-07T23:55:32.378Z\"\n    },\n    {\n        \"_id\": \"6612283fc7f64e612d548031\",\n        \"user\": \"661227fec7f64e612d54802b\",\n        \"cartItem\": {\n            \"_id\": \"66125b48c33eab4ec1012104\",\n            \"title\": \"Tulip311 Fabric 3 + 1 + 1 Sofa Set\",\n            \"description\": \"Brown, DIY(Do-It-Yourself)\",\n            \"price\": 19999,\n            \"category\": [\n                \"Solid Wood\",\n                \"Fabric\"\n            ],\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-07T08:37:28.959Z\",\n            \"updatedAt\": \"2024-04-07T08:37:28.959Z\"\n        },\n        \"quantity\": 5,\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T23:57:15.777Z\",\n        \"updatedAt\": \"2024-04-08T10:02:53.956Z\"\n    },\n    {\n        \"_id\": \"66122856c7f64e612d548034\",\n        \"user\": \"661227fec7f64e612d54802b\",\n        \"cartItem\": {\n            \"_id\": \"661258f5c33eab4ec10120fb\",\n            \"title\": \"Bed \",\n            \"description\": \"Black\",\n            \"price\": 21999,\n            \"category\": [\n                \"wooden\",\n                \"Pine Wood\",\n                \"Particle Board\"\n            ],\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-07T08:27:33.999Z\",\n            \"updatedAt\": \"2024-04-07T08:27:33.999Z\"\n        },\n        \"quantity\": 3,\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T23:58:16.414Z\",\n        \"updatedAt\": \"2024-04-07T23:58:16.414Z\"\n    },\n    {\n        \"_id\": \"66122a0fc7f64e612d54804f\",\n        \"user\": \"661227fec7f64e612d54802b\",\n        \"cartItem\": {\n            \"_id\": \"66125ca5c33eab4ec101210a\",\n            \"title\": \"Coffee Table\",\n            \"description\": \"Finish Color - Rustic Brown, DIY(Do-It-Yourself)\",\n            \"price\": 18999,\n            \"category\": [\n                \"Pine Wood\",\n                \"Particle Board\"\n            ],\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-07T08:43:17.873Z\",\n            \"updatedAt\": \"2024-04-07T08:43:17.873Z\"\n        },\n        \"quantity\": 10,\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-08T00:00:05.736Z\",\n        \"updatedAt\": \"2024-04-08T00:00:05.736Z\"\n    }\n]"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "user",
+					"item": [
+						{
+							"name": "add-cart",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{userAxitaToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n     \"cartItem\": \"66125ca5c33eab4ec101210a\",\r\n    \"_id\": \"6612276cc7f64e612d548025\",  \r\n        \"quantity\": 4\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseURL}}user/cart/add-Cart",
+									"host": [
+										"{{baseURL}}user"
+									],
+									"path": [
+										"cart",
+										"add-Cart"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "add-cart_nikhita",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"_id\": \"6612279ac7f64e612d548028\",  \r\n     \"cartItem\": \"66125d72c33eab4ec1012110\",\r\n        \"quantity\":4\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseURL}}user/cart/add-Cart",
+											"host": [
+												"{{baseURL}}user"
+											],
+											"path": [
+												"cart",
+												"add-Cart"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "271"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"10f-8p81HbNmaHfyDMCNfpTUQ1W4d6o\""
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 07 Apr 2024 23:53:45 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"cart\": {\n        \"user\": \"6612276cc7f64e612d548025\",\n        \"cartItem\": \"66125d72c33eab4ec1012110\",\n        \"quantity\": 4,\n        \"isDelete\": false,\n        \"_id\": \"6612279ac7f64e612d548028\",\n        \"createdAt\": \"2024-04-07T23:53:45.175Z\",\n        \"updatedAt\": \"2024-04-07T23:53:45.175Z\"\n    },\n    \"message\": \"New Item Is Added To The Cart......\"\n}"
+								},
+								{
+									"name": "add-cart_MOHIT",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"_id\": \"661227fec7f64e612d54802b\",  \r\n     \"cartItem\": \"66125d72c33eab4ec1012110\",\r\n        \"quantity\":5\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseURL}}user/cart/add-Cart",
+											"host": [
+												"{{baseURL}}user"
+											],
+											"path": [
+												"cart",
+												"add-Cart"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "271"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"10f-6L9jCC9xabWylsa/wJXn3Hdqvz8\""
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 07 Apr 2024 23:55:32 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"cart\": {\n        \"user\": \"661227fec7f64e612d54802b\",\n        \"cartItem\": \"66125d72c33eab4ec1012110\",\n        \"quantity\": 5,\n        \"isDelete\": false,\n        \"_id\": \"661227fec7f64e612d54802b\",\n        \"createdAt\": \"2024-04-07T23:55:32.378Z\",\n        \"updatedAt\": \"2024-04-07T23:55:32.378Z\"\n    },\n    \"message\": \"New Item Is Added To The Cart......\"\n}"
+								}
+							]
+						},
+						{
+							"name": "get-All-Cart",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{userMohitToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseURL}}user/cart/get-All-Cart",
+									"host": [
+										"{{baseURL}}user"
+									],
+									"path": [
+										"cart",
+										"get-All-Cart"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get-All-Cart",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseURL}}user/cart/get-All-Cart",
+											"host": [
+												"{{baseURL}}user"
+											],
+											"path": [
+												"cart",
+												"get-All-Cart"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "3205"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"c85-Zt2RD7pdMUvZ4/ZWXl8W2YRalO0\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 08 Apr 2024 00:30:52 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"_id\": \"6612276cc7f64e612d548025\",\n        \"user\": \"6612276cc7f64e612d548025\",\n        \"cartItem\": {\n            \"_id\": \"661259d9c33eab4ec10120fe\",\n            \"title\": \"Wood Queen Bed  \",\n            \"description\": \"Matrix-Urban Teak & White\",\n            \"price\": 32999,\n            \"category\": [\n                \"wooden\",\n                \"Pine Wood\"\n            ],\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-07T08:31:21.293Z\",\n            \"updatedAt\": \"2024-04-07T08:31:21.293Z\"\n        },\n        \"quantity\": 2,\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T23:50:50.723Z\",\n        \"updatedAt\": \"2024-04-07T23:50:50.723Z\"\n    },\n    {\n        \"_id\": \"6612279ac7f64e612d548028\",\n        \"user\": \"6612276cc7f64e612d548025\",\n        \"cartItem\": {\n            \"_id\": \"66125d72c33eab4ec1012110\",\n            \"title\": \"BabyTeddy Study Table Chair Set\",\n            \"description\": \"Set Adjustable Height Posture Improvement with Desk lamp Metal Study Table\",\n            \"price\": 5555,\n            \"category\": [\n                \"Fiber\",\n                \"Plastic\"\n            ],\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-07T08:46:42.829Z\",\n            \"updatedAt\": \"2024-04-07T08:46:42.829Z\"\n        },\n        \"quantity\": 4,\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T23:53:45.175Z\",\n        \"updatedAt\": \"2024-04-07T23:53:45.175Z\"\n    },\n    {\n        \"_id\": \"661227fec7f64e612d54802b\",\n        \"user\": \"661227fec7f64e612d54802b\",\n        \"cartItem\": {\n            \"_id\": \"66125d72c33eab4ec1012110\",\n            \"title\": \"BabyTeddy Study Table Chair Set\",\n            \"description\": \"Set Adjustable Height Posture Improvement with Desk lamp Metal Study Table\",\n            \"price\": 5555,\n            \"category\": [\n                \"Fiber\",\n                \"Plastic\"\n            ],\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-07T08:46:42.829Z\",\n            \"updatedAt\": \"2024-04-07T08:46:42.829Z\"\n        },\n        \"quantity\": 5,\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T23:55:32.378Z\",\n        \"updatedAt\": \"2024-04-07T23:55:32.378Z\"\n    },\n    {\n        \"_id\": \"6612283fc7f64e612d548031\",\n        \"user\": \"661227fec7f64e612d54802b\",\n        \"cartItem\": {\n            \"_id\": \"66125b48c33eab4ec1012104\",\n            \"title\": \"Tulip311 Fabric 3 + 1 + 1 Sofa Set\",\n            \"description\": \"Brown, DIY(Do-It-Yourself)\",\n            \"price\": 19999,\n            \"category\": [\n                \"Solid Wood\",\n                \"Fabric\"\n            ],\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-07T08:37:28.959Z\",\n            \"updatedAt\": \"2024-04-07T08:37:28.959Z\"\n        },\n        \"quantity\": 3,\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T23:57:15.777Z\",\n        \"updatedAt\": \"2024-04-07T23:57:15.777Z\"\n    },\n    {\n        \"_id\": \"66122856c7f64e612d548034\",\n        \"user\": \"661227fec7f64e612d54802b\",\n        \"cartItem\": {\n            \"_id\": \"661258f5c33eab4ec10120fb\",\n            \"title\": \"Bed \",\n            \"description\": \"Black\",\n            \"price\": 21999,\n            \"category\": [\n                \"wooden\",\n                \"Pine Wood\",\n                \"Particle Board\"\n            ],\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-07T08:27:33.999Z\",\n            \"updatedAt\": \"2024-04-07T08:27:33.999Z\"\n        },\n        \"quantity\": 3,\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T23:58:16.414Z\",\n        \"updatedAt\": \"2024-04-07T23:58:16.414Z\"\n    },\n    {\n        \"_id\": \"66122965c7f64e612d548046\",\n        \"user\": \"661227fec7f64e612d54802b\",\n        \"cartItem\": {\n            \"_id\": \"66125c0cc33eab4ec1012107\",\n            \"title\": \"Dining Table\",\n            \"description\": \"Angel Furniture Foldable Solid Wood 6 Seater\",\n            \"price\": 12999,\n            \"category\": [\n                \"Pine Wood\"\n            ],\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-07T08:40:44.721Z\",\n            \"updatedAt\": \"2024-04-07T08:40:44.721Z\"\n        },\n        \"quantity\": 3,\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T23:59:12.402Z\",\n        \"updatedAt\": \"2024-04-07T23:59:12.402Z\"\n    },\n    {\n        \"_id\": \"66122a0fc7f64e612d54804f\",\n        \"user\": \"661227fec7f64e612d54802b\",\n        \"cartItem\": {\n            \"_id\": \"66125ca5c33eab4ec101210a\",\n            \"title\": \"Coffee Table\",\n            \"description\": \"Finish Color - Rustic Brown, DIY(Do-It-Yourself)\",\n            \"price\": 18999,\n            \"category\": [\n                \"Pine Wood\",\n                \"Particle Board\"\n            ],\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-07T08:43:17.873Z\",\n            \"updatedAt\": \"2024-04-07T08:43:17.873Z\"\n        },\n        \"quantity\": 10,\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-08T00:00:05.736Z\",\n        \"updatedAt\": \"2024-04-08T00:00:05.736Z\"\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "get-Cart",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{userMohitToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseURL}}user/cart/get-Cart?cartId=6612279ac7f64e612d548028",
+									"host": [
+										"{{baseURL}}user"
+									],
+									"path": [
+										"cart",
+										"get-Cart"
+									],
+									"query": [
+										{
+											"key": "cartId",
+											"value": "6612279ac7f64e612d548028"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get-Cart",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseURL}}user/cart/get-Cart?cartId=6612279ac7f64e612d548028",
+											"host": [
+												"{{baseURL}}user"
+											],
+											"path": [
+												"cart",
+												"get-Cart"
+											],
+											"query": [
+												{
+													"key": "cartId",
+													"value": "6612279ac7f64e612d548028"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "214"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"d6-eVb3t5reBEaUM1xdw8FBtAEVjE4\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 08 Apr 2024 02:29:53 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"_id\": \"6612279ac7f64e612d548028\",\n    \"user\": \"6612276cc7f64e612d548025\",\n    \"cartItem\": \"66125d72c33eab4ec1012110\",\n    \"quantity\": 4,\n    \"isDelete\": false,\n    \"createdAt\": \"2024-04-07T23:53:45.175Z\",\n    \"updatedAt\": \"2024-04-07T23:53:45.175Z\"\n}"
+								}
+							]
+						},
+						{
+							"name": "update-Cart",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{userMohitToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"quantity\": 5\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseURL}}user/cart/update-Cart?cartId=6612283fc7f64e612d548031",
+									"host": [
+										"{{baseURL}}user"
+									],
+									"path": [
+										"cart",
+										"update-Cart"
+									],
+									"query": [
+										{
+											"key": "cartId",
+											"value": "6612283fc7f64e612d548031"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "update-Cart",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"quantity\": 5\r\n}\r\n",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseURL}}user/cart/update-Cart?cartId=6612283fc7f64e612d548031",
+											"host": [
+												"{{baseURL}}user"
+											],
+											"path": [
+												"cart",
+												"update-Cart"
+											],
+											"query": [
+												{
+													"key": "cartId",
+													"value": "6612283fc7f64e612d548031"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "271"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"10f-LUVji+npOrDuL5XuWS64rhQ0W0k\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 08 Apr 2024 10:02:54 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"cart\": {\n        \"_id\": \"6612283fc7f64e612d548031\",\n        \"user\": \"661227fec7f64e612d54802b\",\n        \"cartItem\": \"66125b48c33eab4ec1012104\",\n        \"quantity\": 5,\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-07T23:57:15.777Z\",\n        \"updatedAt\": \"2024-04-08T10:02:53.956Z\"\n    },\n    \"message\": \"Cart Item Updated SuccessFully.....\"\n}"
+								}
+							]
+						},
+						{
+							"name": "delete-Cart",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{userMohitToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseURL}}user/cart/delete-Cart?cartId=66122965c7f64e612d548046",
+									"host": [
+										"{{baseURL}}user"
+									],
+									"path": [
+										"cart",
+										"delete-Cart"
+									],
+									"query": [
+										{
+											"key": "cartId",
+											"value": "66122965c7f64e612d548046"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "delete-Cart",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseURL}}user/cart/delete-Cart?cartId=66122965c7f64e612d548046",
+											"host": [
+												"{{baseURL}}user"
+											],
+											"path": [
+												"cart",
+												"delete-Cart"
+											],
+											"query": [
+												{
+													"key": "cartId",
+													"value": "66122965c7f64e612d548046"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "45"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"2d-bruIHgfH0i22rQYBuiCxY226OaE\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 08 Apr 2024 10:12:00 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"Cart Deleted Successfully......\"\n}"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "order",
+			"item": [
+				{
+					"name": "admin",
+					"item": [
+						{
+							"name": "get-All-Order",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{adminVijayToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseURL}}admin/order/get-All-Order",
+									"host": [
+										"{{baseURL}}admin"
+									],
+									"path": [
+										"order",
+										"get-All-Order"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get-All-Order",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseURL}}admin/order/get-All-Order",
+											"host": [
+												"{{baseURL}}admin"
+											],
+											"path": [
+												"order",
+												"get-All-Order"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "622"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"26e-8vffH7Ygp2NeosfmQAbiXgE8LwU\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 10 Apr 2024 14:30:25 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"_id\": \"66153e9f17977c606b640ef9\",\n        \"user\": \"661227fec7f64e612d54802b\",\n        \"items\": [\n            {\n                \"product\": \"66125d72c33eab4ec1012110\",\n                \"quantity\": 5,\n                \"_id\": \"66153e9f17977c606b640efa\"\n            },\n            {\n                \"product\": \"66125b48c33eab4ec1012104\",\n                \"quantity\": 5,\n                \"_id\": \"66153e9f17977c606b640efb\"\n            },\n            {\n                \"product\": \"661258f5c33eab4ec10120fb\",\n                \"quantity\": 3,\n                \"_id\": \"66153e9f17977c606b640efc\"\n            },\n            {\n                \"product\": \"66125c0cc33eab4ec1012107\",\n                \"quantity\": 3,\n                \"_id\": \"66153e9f17977c606b640efd\"\n            },\n            {\n                \"product\": \"66125ca5c33eab4ec101210a\",\n                \"quantity\": 10,\n                \"_id\": \"66153e9f17977c606b640efe\"\n            }\n        ],\n        \"totalAmount\": 422754,\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-09T13:11:59.801Z\",\n        \"updatedAt\": \"2024-04-09T13:11:59.801Z\"\n    }\n]"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "user",
+					"item": [
+						{
+							"name": "add-New-Order",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{userAxitaToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseURL}}user/order/add-New-Order?me=true",
+									"host": [
+										"{{baseURL}}user"
+									],
+									"path": [
+										"order",
+										"add-New-Order"
+									],
+									"query": [
+										{
+											"key": "me",
+											"value": "true"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "add-New-Order-AXITA",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseURL}}user/order/add-New-Order?me=true",
+											"host": [
+												"{{baseURL}}user"
+											],
+											"path": [
+												"order",
+												"add-New-Order"
+											],
+											"query": [
+												{
+													"key": "me",
+													"value": "true"
+												}
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "713"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"2c9-lCxwvWRTdAIODXXeXtUvXWiPxiA\""
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 09 Apr 2024 04:13:01 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"newOrder\": {\n        \"user\": {\n            \"_id\": \"6612276cc7f64e612d548025\",\n            \"firstName\": \"axita\",\n            \"lastName\": \"patel\",\n            \"gender\": \"Female\",\n            \"email\": \"axita99@gmail.com\",\n            \"password\": \"$2b$10$DMEMaBxwido3ezRCeBz3Fu5PTupiT050Bx3.MbOt/XGR.W.Bq/cHG\",\n            \"mobileNo\": 8866111111,\n            \"isAdmin\": false,\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-07T04:56:12.117Z\",\n            \"updatedAt\": \"2024-04-07T04:56:12.117Z\"\n        },\n        \"items\": [\n            {\n                \"product\": \"661259d9c33eab4ec10120fe\",\n                \"quantity\": 2,\n                \"_id\": \"6614c04d9e5d5734f4e93282\"\n            },\n            {\n                \"product\": \"66125d72c33eab4ec1012110\",\n                \"quantity\": 4,\n                \"_id\": \"6614c04d9e5d5734f4e93283\"\n            }\n        ],\n        \"totalAmount\": 88218,\n        \"isDelete\": false,\n        \"_id\": \"6614c04d9e5d5734f4e93281\",\n        \"createdAt\": \"2024-04-09T04:13:01.141Z\",\n        \"updatedAt\": \"2024-04-09T04:13:01.141Z\"\n    },\n    \"message\": \"Order Place Successfully\"\n}"
+								},
+								{
+									"name": "add-New-Order-Mohit",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseURL}}user/order/add-New-Order?me=true",
+											"host": [
+												"{{baseURL}}user"
+											],
+											"path": [
+												"order",
+												"add-New-Order"
+											],
+											"query": [
+												{
+													"key": "me",
+													"value": "true"
+												}
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "969"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"3c9-CB5XNzJxj/0zHdktHoi11uLPNSE\""
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 09 Apr 2024 13:12:00 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"newOrder\": {\n        \"user\": {\n            \"_id\": \"661227fec7f64e612d54802b\",\n            \"firstName\": \"mohit\",\n            \"lastName\": \"sharma\",\n            \"gender\": \"Male\",\n            \"email\": \"mohit33@gmail.com\",\n            \"password\": \"$2b$10$LdQooIi2C7s/YsnlEJ.EzexAQaSfEzOLCPItrSugOjzFGER2dFQ2O\",\n            \"mobileNo\": 8866111113,\n            \"isAdmin\": false,\n            \"isDelete\": false,\n            \"createdAt\": \"2024-04-07T04:58:38.846Z\",\n            \"updatedAt\": \"2024-04-07T04:58:38.846Z\"\n        },\n        \"items\": [\n            {\n                \"product\": \"66125d72c33eab4ec1012110\",\n                \"quantity\": 5,\n                \"_id\": \"66153e9f17977c606b640efa\"\n            },\n            {\n                \"product\": \"66125b48c33eab4ec1012104\",\n                \"quantity\": 5,\n                \"_id\": \"66153e9f17977c606b640efb\"\n            },\n            {\n                \"product\": \"661258f5c33eab4ec10120fb\",\n                \"quantity\": 3,\n                \"_id\": \"66153e9f17977c606b640efc\"\n            },\n            {\n                \"product\": \"66125c0cc33eab4ec1012107\",\n                \"quantity\": 3,\n                \"_id\": \"66153e9f17977c606b640efd\"\n            },\n            {\n                \"product\": \"66125ca5c33eab4ec101210a\",\n                \"quantity\": 10,\n                \"_id\": \"66153e9f17977c606b640efe\"\n            }\n        ],\n        \"totalAmount\": 422754,\n        \"isDelete\": false,\n        \"_id\": \"66153e9f17977c606b640ef9\",\n        \"createdAt\": \"2024-04-09T13:11:59.801Z\",\n        \"updatedAt\": \"2024-04-09T13:11:59.801Z\"\n    },\n    \"message\": \"Order Place Successfully\"\n}"
+								}
+							]
+						},
+						{
+							"name": "ge-All-Order",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{userAxitaToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseURL}}user/order/get-All-Order",
+									"host": [
+										"{{baseURL}}user"
+									],
+									"path": [
+										"order",
+										"get-All-Order"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "ge-All-Order",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseURL}}user/order/get-All-Order",
+											"host": [
+												"{{baseURL}}user"
+											],
+											"path": [
+												"order",
+												"get-All-Order"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "986"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"3da-xmncNngR7MHabsYAEZZKfMpeOrY\""
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 09 Apr 2024 13:38:54 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"_id\": \"6614c09d9e5d5734f4e9328a\",\n        \"user\": \"6612276cc7f64e612d548025\",\n        \"items\": [\n            {\n                \"product\": \"661259d9c33eab4ec10120fe\",\n                \"quantity\": 2,\n                \"_id\": \"6614c09d9e5d5734f4e9328b\"\n            },\n            {\n                \"product\": \"66125d72c33eab4ec1012110\",\n                \"quantity\": 4,\n                \"_id\": \"6614c09d9e5d5734f4e9328c\"\n            }\n        ],\n        \"totalAmount\": 88218,\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-09T04:14:21.168Z\",\n        \"updatedAt\": \"2024-04-09T04:14:21.168Z\"\n    },\n    {\n        \"_id\": \"66153e9f17977c606b640ef9\",\n        \"user\": \"661227fec7f64e612d54802b\",\n        \"items\": [\n            {\n                \"product\": \"66125d72c33eab4ec1012110\",\n                \"quantity\": 5,\n                \"_id\": \"66153e9f17977c606b640efa\"\n            },\n            {\n                \"product\": \"66125b48c33eab4ec1012104\",\n                \"quantity\": 5,\n                \"_id\": \"66153e9f17977c606b640efb\"\n            },\n            {\n                \"product\": \"661258f5c33eab4ec10120fb\",\n                \"quantity\": 3,\n                \"_id\": \"66153e9f17977c606b640efc\"\n            },\n            {\n                \"product\": \"66125c0cc33eab4ec1012107\",\n                \"quantity\": 3,\n                \"_id\": \"66153e9f17977c606b640efd\"\n            },\n            {\n                \"product\": \"66125ca5c33eab4ec101210a\",\n                \"quantity\": 10,\n                \"_id\": \"66153e9f17977c606b640efe\"\n            }\n        ],\n        \"totalAmount\": 422754,\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-09T13:11:59.801Z\",\n        \"updatedAt\": \"2024-04-09T13:11:59.801Z\"\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "get-Order",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{userAxitaToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseURL}}user/order/get-Order?orderId=66153e9f17977c606b640ef9",
+									"host": [
+										"{{baseURL}}user"
+									],
+									"path": [
+										"order",
+										"get-Order"
+									],
+									"query": [
+										{
+											"key": "orderId",
+											"value": "66153e9f17977c606b640ef9"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get-Order",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseURL}}user/order/get-Order?orderId=66153e9f17977c606b640ef9",
+											"host": [
+												"{{baseURL}}user"
+											],
+											"path": [
+												"order",
+												"get-Order"
+											],
+											"query": [
+												{
+													"key": "orderId",
+													"value": "66153e9f17977c606b640ef9"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "620"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"26c-mXu/EQ3vSofbqODi9CVZKRd4+hc\""
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 09 Apr 2024 13:46:19 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"_id\": \"66153e9f17977c606b640ef9\",\n    \"user\": \"661227fec7f64e612d54802b\",\n    \"items\": [\n        {\n            \"product\": \"66125d72c33eab4ec1012110\",\n            \"quantity\": 5,\n            \"_id\": \"66153e9f17977c606b640efa\"\n        },\n        {\n            \"product\": \"66125b48c33eab4ec1012104\",\n            \"quantity\": 5,\n            \"_id\": \"66153e9f17977c606b640efb\"\n        },\n        {\n            \"product\": \"661258f5c33eab4ec10120fb\",\n            \"quantity\": 3,\n            \"_id\": \"66153e9f17977c606b640efc\"\n        },\n        {\n            \"product\": \"66125c0cc33eab4ec1012107\",\n            \"quantity\": 3,\n            \"_id\": \"66153e9f17977c606b640efd\"\n        },\n        {\n            \"product\": \"66125ca5c33eab4ec101210a\",\n            \"quantity\": 10,\n            \"_id\": \"66153e9f17977c606b640efe\"\n        }\n    ],\n    \"totalAmount\": 422754,\n    \"isDelete\": false,\n    \"createdAt\": \"2024-04-09T13:11:59.801Z\",\n    \"updatedAt\": \"2024-04-09T13:11:59.801Z\"\n}"
+								}
+							]
+						},
+						{
+							"name": "delete-Order",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{userAxitaToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseURL}}user/order/delete-Order?orderId=6614c09d9e5d5734f4e9328a",
+									"host": [
+										"{{baseURL}}user"
+									],
+									"path": [
+										"order",
+										"delete-Order"
+									],
+									"query": [
+										{
+											"key": "orderId",
+											"value": "6614c09d9e5d5734f4e9328a"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "delete-Order",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseURL}}user/order/delete-Order?orderId=6614c09d9e5d5734f4e9328a",
+											"host": [
+												"{{baseURL}}user"
+											],
+											"path": [
+												"order",
+												"delete-Order"
+											],
+											"query": [
+												{
+													"key": "orderId",
+													"value": "6614c09d9e5d5734f4e9328a"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "414"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"19e-rjvcNESM5z/un+GUp1+E4r90Yaw\""
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 09 Apr 2024 14:08:50 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"order\": {\n        \"_id\": \"6614c09d9e5d5734f4e9328a\",\n        \"user\": \"6612276cc7f64e612d548025\",\n        \"items\": [\n            {\n                \"product\": \"661259d9c33eab4ec10120fe\",\n                \"quantity\": 2,\n                \"_id\": \"6614c09d9e5d5734f4e9328b\"\n            },\n            {\n                \"product\": \"66125d72c33eab4ec1012110\",\n                \"quantity\": 4,\n                \"_id\": \"6614c09d9e5d5734f4e9328c\"\n            }\n        ],\n        \"totalAmount\": 88218,\n        \"isDelete\": true,\n        \"createdAt\": \"2024-04-09T04:14:21.168Z\",\n        \"updatedAt\": \"2024-04-09T14:08:50.142Z\"\n    },\n    \"message\": \"Order Deleted Successfully...\"\n}"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "review",
+			"item": [
+				{
+					"name": "admin",
+					"item": [
+						{
+							"name": "get-All-Review",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{adminVijayToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseURL}}admin/review/get-All-Review",
+									"host": [
+										"{{baseURL}}admin"
+									],
+									"path": [
+										"review",
+										"get-All-Review"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get-All-Review",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseURL}}admin/review/get-All-Review",
+											"host": [
+												"{{baseURL}}admin"
+											],
+											"path": [
+												"review",
+												"get-All-Review"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "1073"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"431-nFdLzYxqwhSYrcDpsGIRcQyuLZs\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 10 Apr 2024 14:16:59 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"_id\": \"66160bbd7b30742bbe8aa0ef\",\n        \"user\": \"6612276cc7f64e612d548025\",\n        \"rating\": 5,\n        \"comment\": \"Best Product For Home Furniture.\",\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-10T03:47:09.596Z\",\n        \"updatedAt\": \"2024-04-10T03:47:09.596Z\"\n    },\n    {\n        \"_id\": \"66160c197b30742bbe8aa0f7\",\n        \"user\": \"6612276cc7f64e612d548025\",\n        \"rating\": 4.5,\n        \"comment\": \"Best Product Furniture.\",\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-10T03:48:41.026Z\",\n        \"updatedAt\": \"2024-04-10T03:48:41.026Z\"\n    },\n    {\n        \"_id\": \"66160c2e7b30742bbe8aa0fb\",\n        \"user\": \"661227fec7f64e612d54802b\",\n        \"rating\": 4.5,\n        \"comment\": \"Best Product Furniture.\",\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-10T03:49:02.931Z\",\n        \"updatedAt\": \"2024-04-10T03:49:02.931Z\"\n    },\n    {\n        \"_id\": \"66160c457b30742bbe8aa0ff\",\n        \"user\": \"661228b2c7f64e612d54803a\",\n        \"rating\": 4.5,\n        \"comment\": \"Best Product Furniture.\",\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-10T03:49:25.172Z\",\n        \"updatedAt\": \"2024-04-10T13:50:04.561Z\"\n    },\n    {\n        \"_id\": \"66160c5f7b30742bbe8aa103\",\n        \"user\": \"661228b2c7f64e612d54803a\",\n        \"rating\": 3.5,\n        \"comment\": \"Best Product Furniture.\",\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-10T03:49:51.547Z\",\n        \"updatedAt\": \"2024-04-10T03:49:51.547Z\"\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "delete-Review",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{adminVijayToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseURL}}admin/review/delete-Review?reviewId=66160c5f7b30742bbe8aa103",
+									"host": [
+										"{{baseURL}}admin"
+									],
+									"path": [
+										"review",
+										"delete-Review"
+									],
+									"query": [
+										{
+											"key": "reviewId",
+											"value": "66160c5f7b30742bbe8aa103"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "delete-Review",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseURL}}admin/review/delete-Review?reviewId=66160c5f7b30742bbe8aa103",
+											"host": [
+												"{{baseURL}}admin"
+											],
+											"path": [
+												"review",
+												"delete-Review"
+											],
+											"query": [
+												{
+													"key": "reviewId",
+													"value": "66160c5f7b30742bbe8aa103"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "63"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"3f-f7l6dZCqwF4lbDl7tv3wRd5ty4Q\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 10 Apr 2024 14:20:52 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"The product review has been deleted successfully.\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "user",
+					"item": [
+						{
+							"name": "add-Review",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{userShitalToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"rating\": 3.5,\r\n    \"comment\": \"Best Product Furniture.\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseURL}}user/review/add-Review?productId=66125d72c33eab4ec1012110",
+									"host": [
+										"{{baseURL}}user"
+									],
+									"path": [
+										"review",
+										"add-Review"
+									],
+									"query": [
+										{
+											"key": "productId",
+											"value": "66125d72c33eab4ec1012110"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "add-Review",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"rating\": 4,\r\n    \"comment\": \"Best Product For Home Furniture.\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseURL}}user/review/add-Review?productId=66125c0cc33eab4ec1012107",
+											"host": [
+												"{{baseURL}}user"
+											],
+											"path": [
+												"review",
+												"add-Review"
+											],
+											"query": [
+												{
+													"key": "productId",
+													"value": "66125c0cc33eab4ec1012107"
+												}
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "261"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"105-a536zzXH2PlB5NSDYa0H9/cghuQ\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 10 Apr 2024 03:47:56 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"review\": {\n        \"user\": \"6612276cc7f64e612d548025\",\n        \"rating\": 4,\n        \"comment\": \"Best Product For Home Furniture.\",\n        \"isDelete\": false,\n        \"_id\": \"66160beb7b30742bbe8aa0f3\",\n        \"createdAt\": \"2024-04-10T03:47:55.990Z\",\n        \"updatedAt\": \"2024-04-10T03:47:55.990Z\"\n    },\n    \"Message\": \"Review is Added...\"\n}"
+								}
+							]
+						},
+						{
+							"name": "get-All-Review",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{userAxitaToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseURL}}user/review/get-All-Review",
+									"host": [
+										"{{baseURL}}user"
+									],
+									"path": [
+										"review",
+										"get-All-Review"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get-All-Review",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseURL}}user/review/get-All-Review",
+											"host": [
+												"{{baseURL}}user"
+											],
+											"path": [
+												"review",
+												"get-All-Review"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "1291"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"50b-aY99ToaCDjG/YGULWS8XqkeZFIs\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 10 Apr 2024 13:38:20 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"_id\": \"66160bbd7b30742bbe8aa0ef\",\n        \"user\": \"6612276cc7f64e612d548025\",\n        \"rating\": 5,\n        \"comment\": \"Best Product For Home Furniture.\",\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-10T03:47:09.596Z\",\n        \"updatedAt\": \"2024-04-10T03:47:09.596Z\"\n    },\n    {\n        \"_id\": \"66160beb7b30742bbe8aa0f3\",\n        \"user\": \"6612276cc7f64e612d548025\",\n        \"rating\": 4,\n        \"comment\": \"Best Product For Home Furniture.\",\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-10T03:47:55.990Z\",\n        \"updatedAt\": \"2024-04-10T03:47:55.990Z\"\n    },\n    {\n        \"_id\": \"66160c197b30742bbe8aa0f7\",\n        \"user\": \"6612276cc7f64e612d548025\",\n        \"rating\": 4.5,\n        \"comment\": \"Best Product Furniture.\",\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-10T03:48:41.026Z\",\n        \"updatedAt\": \"2024-04-10T03:48:41.026Z\"\n    },\n    {\n        \"_id\": \"66160c2e7b30742bbe8aa0fb\",\n        \"user\": \"661227fec7f64e612d54802b\",\n        \"rating\": 4.5,\n        \"comment\": \"Best Product Furniture.\",\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-10T03:49:02.931Z\",\n        \"updatedAt\": \"2024-04-10T03:49:02.931Z\"\n    },\n    {\n        \"_id\": \"66160c457b30742bbe8aa0ff\",\n        \"user\": \"661228b2c7f64e612d54803a\",\n        \"rating\": 3,\n        \"comment\": \"Best Product Furniture.\",\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-10T03:49:25.172Z\",\n        \"updatedAt\": \"2024-04-10T03:49:25.172Z\"\n    },\n    {\n        \"_id\": \"66160c5f7b30742bbe8aa103\",\n        \"user\": \"661228b2c7f64e612d54803a\",\n        \"rating\": 3.5,\n        \"comment\": \"Best Product Furniture.\",\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-10T03:49:51.547Z\",\n        \"updatedAt\": \"2024-04-10T03:49:51.547Z\"\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "get-Review",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{userAxitaToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseURL}}user/review/get-Review?Id=66160c5f7b30742bbe8aa103",
+									"host": [
+										"{{baseURL}}user"
+									],
+									"path": [
+										"review",
+										"get-Review"
+									],
+									"query": [
+										{
+											"key": "Id",
+											"value": "66160c5f7b30742bbe8aa103"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get-Review",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseURL}}user/review/get-Review?Id=66160c5f7b30742bbe8aa103",
+											"host": [
+												"{{baseURL}}user"
+											],
+											"path": [
+												"review",
+												"get-Review"
+											],
+											"query": [
+												{
+													"key": "Id",
+													"value": "66160c5f7b30742bbe8aa103"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "212"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"d4-gMiySeHjvo/ot8TuBXhHtIRsANg\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 10 Apr 2024 13:46:48 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"_id\": \"66160c5f7b30742bbe8aa103\",\n    \"user\": \"661228b2c7f64e612d54803a\",\n    \"rating\": 3.5,\n    \"comment\": \"Best Product Furniture.\",\n    \"isDelete\": false,\n    \"createdAt\": \"2024-04-10T03:49:51.547Z\",\n    \"updatedAt\": \"2024-04-10T03:49:51.547Z\"\n}"
+								}
+							]
+						},
+						{
+							"name": "update-Review",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{userAxitaToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"rating\": 4.5,\r\n    \"comment\": \"Best Product Furniture.\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseURL}}user/review/update-Review?Id=66160c457b30742bbe8aa0ff",
+									"host": [
+										"{{baseURL}}user"
+									],
+									"path": [
+										"review",
+										"update-Review"
+									],
+									"query": [
+										{
+											"key": "Id",
+											"value": "66160c457b30742bbe8aa0ff"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "update-Review",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"rating\": 4.5,\r\n    \"comment\": \"Best Product Furniture.\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseURL}}user/review/update-Review?Id=66160c457b30742bbe8aa0ff",
+											"host": [
+												"{{baseURL}}user"
+											],
+											"path": [
+												"review",
+												"update-Review"
+											],
+											"query": [
+												{
+													"key": "Id",
+													"value": "66160c457b30742bbe8aa0ff"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "275"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"113-EHaVLsDaZsUvUzyk1gti/U7Qcas\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 10 Apr 2024 13:50:04 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"review\": {\n        \"_id\": \"66160c457b30742bbe8aa0ff\",\n        \"user\": \"661228b2c7f64e612d54803a\",\n        \"rating\": 4.5,\n        \"comment\": \"Best Product Furniture.\",\n        \"isDelete\": false,\n        \"createdAt\": \"2024-04-10T03:49:25.172Z\",\n        \"updatedAt\": \"2024-04-10T13:50:04.561Z\"\n    },\n    \"message\": \" Product Review Update Successfully....\"\n}"
+								}
+							]
+						},
+						{
+							"name": "delete-Review",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{userAxitaToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseURL}}user/review/delete-Review?Id=66160beb7b30742bbe8aa0f3",
+									"host": [
+										"{{baseURL}}user"
+									],
+									"path": [
+										"review",
+										"delete-Review"
+									],
+									"query": [
+										{
+											"key": "Id",
+											"value": "66160beb7b30742bbe8aa0f3"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "delete-Review",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseURL}}user/review/delete-Review?Id=66160beb7b30742bbe8aa0f3",
+											"host": [
+												"{{baseURL}}user"
+											],
+											"path": [
+												"review",
+												"delete-Review"
+											],
+											"query": [
+												{
+													"key": "Id",
+													"value": "66160beb7b30742bbe8aa0f3"
+												}
+											]
+										}
+									},
+									"status": "Accepted",
+									"code": 202,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "262"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"106-Tq9DYJ7lhc/s0qFuyTNCMPMfERA\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 10 Apr 2024 13:53:37 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"review\": {\n        \"_id\": \"66160beb7b30742bbe8aa0f3\",\n        \"user\": \"6612276cc7f64e612d548025\",\n        \"rating\": 4,\n        \"comment\": \"Best Product For Home Furniture.\",\n        \"isDelete\": true,\n        \"createdAt\": \"2024-04-10T03:47:55.990Z\",\n        \"updatedAt\": \"2024-04-10T13:53:37.864Z\"\n    },\n    \"Message\": \"Review is Delete....\"\n}"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseURL",
+			"value": "http://localhost:1114/api/",
+			"type": "string"
+		},
+		{
+			"key": "adminVijayToken",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbklkIjoiNjYxMjIzOTVjN2Y2NGU2MTJkNTQ4MDBkIiwiaWF0IjoxNzEyNDY1MDUyfQ._kahawjhO2I5IGr3mjgNOyC5QIyJEvpg_0qJGxG1AGs",
+			"type": "string"
+		},
+		{
+			"key": "adminDivyaToken",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbklkIjoiNjYxMjIzZTJjN2Y2NGU2MTJkNTQ4MDEwIiwiaWF0IjoxNzEyNDY0ODg2fQ.Nv4Ktfgu5a_7pd4wJThnBBCfbhTq8cjdkTd2P7s5gog",
+			"type": "string"
+		},
+		{
+			"key": "userAxitaToken",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjEyMjc2Y2M3ZjY0ZTYxMmQ1NDgwMjUiLCJpYXQiOjE3MTI0NjY1Nzl9.FwsFLhVw7xBQ_xsx4VeB-uRckj8mFNYDDoA30CiSZXA",
+			"type": "string"
+		},
+		{
+			"key": "userMohitToken",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjEyMjdmZWM3ZjY0ZTYxMmQ1NDgwMmIiLCJpYXQiOjE3MTI0NjY3MDh9.rh80DP4L8xpUTH6iD7iW_ESSrN-Yo5sdUOTYjpDheaY",
+			"type": "string"
+		},
+		{
+			"key": "userShitalToken",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjEyMjhiMmM3ZjY0ZTYxMmQ1NDgwM2EiLCJpYXQiOjE3MTI1MTA2MDd9.0Ff8svQpz41E9Nqz8v7nJ3JfOOcSWvh1M6evk5WjpbA",
+			"type": "string"
+		},
+		{
+			"key": "adminSmrutiToken",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbklkIjoiNjYxMjJhMGZjN2Y2NGU2MTJkNTQ4MDRmIiwiaWF0IjoxNzEyNTgyMTQ2fQ.sE-RCyMvoTJ0phM7cVFiIyUCD70BPtK4z83yrXXFWYo",
+			"type": "string"
+		},
+		{
+			"key": "baseONLINEURL",
+			"value": "https://furniture-project-typescript.onrender.com/",
+			"type": "string"
+		}
+	]
+}
